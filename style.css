@@ -65,7 +65,7 @@ header.active nav {
 .toggle-btn {
   width: 42px;
   position: absolute;
-  right: 80px;
+  right: 40px;
   top: 26px;
   display: none;
 }
@@ -267,5 +267,10 @@ iframe {
     }
     header .nav-wrapper .logo img {
         padding: 0;
+    }
+}
+@media(max-width: 640px) {
+    .toggle-btn { 
+        right: 30px;
     }
 }
