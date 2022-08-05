@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/styles/slick-carousel.min.css">
+    <link rel="stylesheet" href="./assets/styles/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Madoc</title>
+    <script src="./assets/js/tailwind.js"></script>
+</head>
+<body>
+
+    <header id="header">
+       <div class="nav-wrapper">
+        <div class="logo for-md">
+            <img class="pt-[15px]" src="./img/logo.png" alt="" />
+           </div>
+           <div
+           class="toggle-btn border-[1px] border-[#ddd] rounded-[4px] px-[9px] py-[5px]"
+           onclick="myFunction();"
+           >
+                <span class="mt-[4px]"></span>
+                <span></span>
+                <span></span>
+           </div>
+            <nav id="nav"
+            class="left-[50%] fixed translate-x-[-50%] w-[1170px] h-[93px] mt-[20px]"
+            >
+                <div class="logo">
+                 <img class="pt-[15px]" src="./img/logo.png" alt="" />
+                </div>
+                <div  class="nav-div">
+                    <ul>
+                        <li><a href="#home" onclick="activeMenu('menu_home')" id="menu_home" class="menu-item active">HOME</a></li>
+                        <li><a href="#about" onclick="activeMenu('menu_about')" id="menu_about" class="menu-item" >ABOUT</a></li>
+                        <li><a href="#appointment" onclick="activeMenu('menu_appointment')" id="menu_appointment" class="menu-item">APPOINTMENT</a></li>
+                        <li><a href="#departments" onclick="activeMenu('menu_departments')" id="menu_departments" class="menu-item">DEPARTMENTS</a></li>
+                        <li><a href="#doctors" onclick="activeMenu('menu_doctors')" id="menu_doctors" class="menu-item">DOCTORS</a></li>
+                        <li><a href="#services" onclick="activeMenu('menu_services')" id="menu_services" class="menu-item">SERVICES</a></li>
+                        <li><a href="#news" onclick="activeMenu('menu_news')" id="menu_news" class="menu-item">NEWS</a></li>
+                        <li><a href="#contact" onclick="activeMenu('menu_contact')" id="menu_contact" class="menu-item">CONTACTS</a></li>
+                    </ul>
+                </div>
+            </nav>
+       </div>
+    </header>
+    
+    <!-- hero section -->
+    
+    <section id="home" class="">
+        <div class="slider-for z-[-1] relative">
+          <div class="w-full relative">
+            <img src="./img/home/slide1.jpg" alt="image" class="w-full brightness-75" />
+            <div
+              class="absolute w-full h-[100vh] left-0 right-0 top-0 bottom-0  pt-[17%] sm:pt-[18%] pl-[13%] flex flex-col justify-cente r"
+            >
+              <h1
+                class="text-[18px] text-[#fff] font-bold capitalize"
+              >
+              24 Hours Service
+              </h1>
+  
+              <h1
+                class="text-[30px] sm:text-[40px] lg:text-[70px] text-[#fff] font-bold max-w-[70%] lg:max-w-[90%] xl:max-w-[50%] leading-[35px] sm:leading-[50px] lg:leading-[75px] py-[10px] sm:py-[20px] capitalize"
+              >
+                Choose the base care for your selve
+              </h1>
+              <button
+                class="fmr inline-block max-w-[300px] text-[15px] text-[#fff] font-[400] border-[1px] border-[#9b9b9c] rounded-[2px] pt-[12px] px-[25px] pb-[10px] bg-[transparent] m-0"
+              >
+                Choose Our Departments
+              </button>
+            </div>
+          </div>
+          <!-- <div class="w-full relative">
+            <img src="./img/home/slide2.jpg" alt="image" class="w-full" />
+            <div
+            class="absolute w-full h-[100vh] left-0 right-0 top-0 bottom-0  pt-[17%] sm:pt-[18%] pl-[13%] flex flex-col justify-cente r"
+            >
+              <h1
+                class="text-[18px] text-[#fff] font-bold capitalize"
+              >
+                Focus On You
+              </h1>
+  
+              <h1
+                class="text-[30px] sm:text-[40px] lg:text-[70px] text-[#fff] font-bold max-w-[70%] lg:max-w-[90%] xl:max-w-[50%] leading-[35px] sm:leading-[50px] lg:leading-[75px] py-[10px] sm:py-[20px] capitalize"
+              >
+                Providing Total  Health Solution
+              </h1>
+              <button
+                class="fmr inline-block max-w-[300px] text-[15px] text-[#fff] font-[400] border-[1px] border-[#9b9b9c] rounded-[2px] pt-[12px] px-[25px] pb-[10px] bg-[transparent] m-0"
+              >
+                Choose Our Departments
+              </button>
+            </div>
+          </div>
+          <div class="w-full relative">
+            <img src="./img/home/slide3.jpg" alt="image" class="w-full" />
+            <div
+              class="absolute w-full h-[100vh] left-0 right-0 top-0 bottom-0  pt-[17%] sm:pt-[18%] pl-[13%] flex flex-col justify-cente r"
+            >
+              <h1
+                class="text-[18px] text-[#fff] font-bold capitalize"
+              >
+               Good Health Moves us forward
+              </h1>
+  
+              <h1
+                class="text-[30px] sm:text-[40px] lg:text-[70px] text-[#fff] font-bold max-w-[70%] lg:max-w-[90%] xl:max-w-[50%] leading-[35px] sm:leading-[50px] lg:leading-[75px] py-[10px] sm:py-[20px] capitalize"
+              >
+                The Medical Services That You Can Trust
+              </h1>
+              <button
+                class="fmr inline-block max-w-[300px] text-[15px] text-[#fff] font-[400] border-[1px] border-[#9b9b9c] rounded-[2px] pt-[12px] px-[25px] pb-[10px] bg-[transparent] m-0"
+              >
+                Choose Our Departments
+              </button>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+    <!-- about company -->
+    <section id="about" class="bg-[#fff] py-[60px] sm:py-[100px]">
+        <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
+            <div class="title-section ml-[auto] mr-[auto] ml-[15px] mr-[15px]">
+                <h1 class="text-[35px] sm:text-[40px] text-[#333] font-bold  before:w-[70px] before:h-[1px] before:absolute before:bg-[#3498db] before:left-[0] before:bottom-[-10px] relative">About the Medoc <br>  Medical and Healthcare Center </h1>
+                <p class="text-[#999999] text-[15px] font-light	leading-6 pt-[25px]	">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut
+                turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+            </div>
+            <div class="flex items-center flex-wrap  justify-start md:justify-between mt-[40px] gap-x-[1%] lg:gap-x-[1.5%] gap-y-[50px] mt-[70px]">
+                <div class=" flex items-center justify-start md:justify-center gap-6 w-[100%] md:w-[48%] lg:w-[31%]">
+                    <div class="min-w-[95px] max-w-[95px] w-[95px] h-[70px] bg-[#3498db] rounded flex items-center justify-center	">
+                                            <a href="#"><i class="fa fa-user-md text-[30px] text-[#fff] text-[#ffffff] "></i></a>
+                        
+                            </div>
+                            <div>
+                            <h2 class="txext-[#333333] text-[18px] leading-5 "><a href="#">Professional Doctors</a></h2>
+                            <p class="text-[15px] text-[#666666] leading-6	mx-[0px] my-[0px] font-light	">Donec odio. Quisque volutpat mattis eros. Nullam malesuada </p>
+                        </div>
+                    </div>
+                <div class=" flex items-center justify-start md:justify-center gap-6 w-[100%] md:w-[48%] lg:w-[31%]">
+                    <div class="min-w-[95px] max-w-[95px] w-[95px] h-[70px] bg-[#3498db] rounded flex items-center justify-center	">
+                                            <a href="#"><i class="fa fa-tint text-[30px] text-[#fff] text-[#ffffff] "></i></a>
+                        
+                            </div>
+                            <div>
+                            <h2 class="txext-[#333333] text-[18px] leading-5 "><a href="#">Exclusive Blood Bank</a></h2>
+                            <p class="text-[15px] text-[#666666] leading-6	mx-[0px] my-[0px] font-light	">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
+                        </div>
+                    </div>
+                <div class=" flex items-center justify-start md:justify-center gap-6 w-[100%] md:w-[48%] lg:w-[31%]">
+                    <div class="min-w-[95px] max-w-[95px] w-[95px] h-[70px] bg-[#3498db] rounded flex items-center justify-center	">
+                                            <a href="#"><i class="fa fa-ambulance text-[30px] text-[#fff] text-[#ffffff] "></i></a>
+                        
+                            </div>
+                            <div>
+                            <h2 class="txext-[#333333] text-[18px] leading-5 "><a href="#">Emergency Help</a></h2>
+                            <p class="text-[15px] text-[#666666] leading-6	mx-[0px] my-[0px] font-light	">Donec nec justo eget felis facilisis fermentum. </p>
+                        </div>
+                    </div>
+            <!-- </div>
+            <div class="flex items-center justify-center mt-[40px] gap-x-5"> -->
+                <div class=" flex items-center justify-start md:justify-center gap-6 w-[100%] md:w-[48%] lg:w-[31%]">
+                    <div class="min-w-[95px] max-w-[95px] w-[95px] h-[70px] bg-[#3498db] rounded flex items-center justify-center	">
+                                            <a href="#"><i class="fa fa-thumbs-up text-[30px] text-[#fff] text-[#ffffff] "></i></a>
+                        
+                            </div>
+                            <div>
+                            <h2 class="txext-[#333333] text-[18px] leading-5 "><a href="#">Premium Healthcare</a></h2>
+                            <p class="text-[15px] text-[#666666] leading-6	mx-[0px] my-[0px] font-light	">Donec odio. Quisque volutpat mattis eros. Nullam malesuada</p>
+                        </div>
+                    </div>
+                <div class=" flex items-center justify-start md:justify-center gap-6 w-[100%] md:w-[48%] lg:w-[31%]">
+                    <div class="min-w-[95px] max-w-[95px] w-[95px] h-[70px] bg-[#3498db] rounded flex items-center justify-center	">
+                                            <a href="#"><i class="fa fa-heart text-[30px] text-[#fff] text-[#ffffff] "></i></a>
+                        
+                            </div>
+                            <div>
+                            <h2 class="txext-[#333333] text-[18px] leading-5 "><a href="#">Dedicated Patient Care</a></h2>
+                            <p class="text-[15px] text-[#666666] leading-6	mx-[0px] my-[0px] font-light	">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
+                        </div>
+                    </div>
+                <div class=" flex items-center justify-start md:justify-center gap-6 w-[100%] md:w-[48%] lg:w-[31%]">
+                    <div class="min-w-[95px] max-w-[95px] w-[95px] h-[70px] bg-[#3498db] rounded flex items-center justify-center	">
+                                            <a href="#"><i class="fa fa-flask text-[30px] text-[#fff] text-[#ffffff] "></i></a>
+                        
+                            </div>
+                            <div>
+                            <h2 class="txext-[#333333] text-[18px] leading-5 "><a href="#">Laboratory Analysis</a></h2>
+                            <p class="text-[15px] text-[#666666] leading-6	mx-[0px] my-[0px] font-light	">Donec nec justo eget felis facilisis fermentum.</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- statistics -->
+    <section class="bg-[#3498db] py-[60px] sm:py-[100px] statistics">
+        <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
+                <div class="w-full flex flex-wrap justify-between gap-x-[1%] lg:w-[100%] gap-y-[40px] lg:gap-y-0">
+                    <div class="text-[#fff] text-center w-[49%] lg:w-[24%]">
+                        <h3 id="count1" class="text-[48px] font-[600] leading-[56px]">125+</h3>
+                        <h6 class="text-[18px] font-[600] leading-[20px] mt-5 mb-[40px] relative before:w-[50px] before:h-[3px] before:bg-[#fff] before:absolute before:top-[40px] before:left-[50%] before:translate-x-[-50%]">Our Staffs</h6>
+                        <p class="frr text-[15px] font-[300] leading-[24px] px-[5%] sm:px-[15%] lg:px-0">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
+                    </div>
+                    <div class="text-[#fff] text-center w-[49%] lg:w-[24%]">
+                        <h3 id="count2" class="text-[48px] font-[600] leading-[56px]">170+</h3>
+                        <h6 class="text-[18px] font-[600] leading-[20px] mt-5 mb-[40px] relative before:w-[50px] before:h-[3px] before:bg-[#fff] before:absolute before:top-[40px] before:left-[50%] before:translate-x-[-50%]">Clinic Rooms</h6>
+                        <p class="frr text-[15px] font-[300] leading-[24px] px-[5%] sm:px-[15%] lg:px-0">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
+                    </div>
+                    <div class="text-[#fff] text-center w-[49%] lg:w-[24%]">
+                        <h3 id="count3" class="text-[48px] font-[600] leading-[56px]">750+</h3>
+                        <h6 class="text-[18px] font-[600] leading-[20px] mt-5 mb-[40px] relative before:w-[50px] before:h-[3px] before:bg-[#fff] before:absolute before:top-[40px] before:left-[50%] before:translate-x-[-50%]">Happy Clients</h6>
+                        <p class="frr text-[15px] font-[300] leading-[24px] px-[5%] sm:px-[15%] lg:px-0">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
+                    </div>
+                    <div class="text-[#fff] text-center w-[49%] lg:w-[24%]">
+                        <h3 id="count4" class="text-[48px] font-[600] leading-[56px]">130+</h3>
+                        <h6 class="text-[18px] font-[600] leading-[20px] mt-5 mb-[40px] relative before:w-[50px] before:h-[3px] before:bg-[#fff] before:absolute before:top-[40px] before:left-[50%] before:translate-x-[-50%]">Our Machines</h6>
+                        <p class="frr text-[15px] font-[300] leading-[24px] px-[5%] sm:px-[15%] lg:px-0">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
+                    </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- make appointment -->
+    <section id="appointment" class="bg-[#fff] py-[60px] sm:py-[100px] section-appointment">
+        <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
+            <div class="w-full">
+            <div class="w-[100%] lg:w-[50%]">
+                <h1 class="text-[35px] sm:text-[40px] text-[#333] font-bold  before:w-[70px] before:h-[1px] before:absolute before:bg-[#3498db] before:left-[0] before:bottom-[-10px] relative">Make an Appointment </h1>
+                <p class="text-[#999999] text-[15px] font-light	leading-6 pt-[25px]	">We are here for you.</p>
+                <form class="w-full flex flex-wrap gap-x-[4%] mt-[40px] pr-0 lg:pr-[7%]">
+                    <input class="w-[48%] fmr bg-[#fafafa] outline-none rounded-[2px] border-[1px] border-[#e1e1e1] mb-[20px] text-[#999] text-[15px] py-[12px] px-[20px]" type="text" placeholder="First Name*" required />
+                    <input class="w-[48%] fmr bg-[#fafafa] outline-none rounded-[2px] border-[1px] border-[#e1e1e1] mb-[20px] text-[#999] text-[15px] py-[12px] px-[20px]" type="text" placeholder="Last Name*" required />
+                    <input class="w-[48%] fmr bg-[#fafafa] outline-none rounded-[2px] border-[1px] border-[#e1e1e1] mb-[20px] text-[#999] text-[15px] py-[12px] px-[20px]" type="text" placeholder="Phone No*" required />
+                    <input class="w-[48%] fmr bg-[#fafafa] outline-none rounded-[2px] border-[1px] border-[#e1e1e1] mb-[20px] text-[#999] text-[15px] py-[12px] px-[20px]" type="email" placeholder="Email*" required />
+                    <input class="w-[48%] fmr bg-[#fafafa] outline-none rounded-[2px] border-[1px] border-[#e1e1e1] mb-[20px] text-[#999] text-[15px] py-[12px] px-[20px]" type="text" placeholder="Appointment Date*" required />
+                    <input class="w-[48%] fmr bg-[#fafafa] outline-none rounded-[2px] border-[1px] border-[#e1e1e1] mb-[20px] text-[#999] text-[15px] py-[12px] px-[20px]" type="text" placeholder="Patient*" required />
+                    <textarea class="w-full fmr bg-[#fafafa] outline-none rounded-[2px] border-[1px] border-[#e1e1e1] mb-[20px] text-[#999] text-[15px] py-[12px] px-[20px]" placeholder="Message" rows="5" value="sdafd"></textarea>
+                    <button class="fmr text-[15px] text-[#3498db] font-[600] border-[1px] border-[#3498db] rounded-[2px] pt-[12px] px-[25px] pb-[10px] bg-[transparent] m-0">Submit</button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- our departments -->
+        <section id="departments" class="bg-[#fafafa] pt-[100px] pb-[130px]">
+            <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
+                <h1 class="text-[35px] sm:text-[40px] text-[#333] font-bold  before:w-[70px] before:h-[1px] before:absolute before:bg-[#3498db] before:left-[0] before:bottom-[-10px] relative">Our Departments </h1>
+                <p class="text-[#999999] text-[15px] font-light	leading-6 pt-[25px]	">Sed arcu. Cras consequat.</p>
+                </div>
+                <!-- <div class="w-[100%] flex mt-[70px] gap-x-[30px]"> -->
+                <div class="slider-for-departments mt-[70px]">
+                <!-- card -->
+                <div class="max-w-[100%] sm:max-w-[450px] w-full bg-[#fff] mx-3">
+                    <img src="./img/departments/dep1.jpg" class="w-full max-h-[175px ]" />
+                    <div class="w-full py-[25px] px-[20px]">
+                        <h5 class="text-[18px] font-[600] leading-[20px]">Cardiology</h5>
+                        <span class="fmr font-[300] text-[15px] text-[#999] mb-[12px] leading-[24px] inline-block">(including cardiovascular surgery)</span>
+                        <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. </p>
+                        <button class="text-[15px] text-[#3498db] font-[300]">Get a cost estimate  <i class="fa fa-chevron-right text-[#3498db] text-[12px] ml-2"></i></button>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="max-w-[100%] sm:max-w-[450px] w-full bg-[#fff] mx-3">
+                    <img src="./img/departments/dep1.jpg" class="w-full max-h-[175px ]" />
+                    <div class="w-full py-[25px] px-[20px]">
+                        <h5 class="text-[18px] font-[600] leading-[20px]">Cardiology</h5>
+                        <span class="fmr font-[300] text-[15px] text-[#999] mb-[12px] leading-[24px] inline-block">(including cardiovascular surgery)</span>
+                        <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. </p>
+                        <button class="text-[15px] text-[#3498db] font-[300]">Get a cost estimate  <i class="fa fa-chevron-right text-[#3498db] text-[12px] ml-2"></i></button>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="max-w-[100%] sm:max-w-[450px] w-full bg-[#fff] mx-3">
+                    <img src="./img/departments/dep1.jpg" class="w-full max-h-[175px ]" />
+                    <div class="w-full py-[25px] px-[20px]">
+                        <h5 class="text-[18px] font-[600] leading-[20px]">Cardiology</h5>
+                        <span class="fmr font-[300] text-[15px] text-[#999] mb-[12px] leading-[24px] inline-block">(including cardiovascular surgery)</span>
+                        <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. </p>
+                        <button class="text-[15px] text-[#3498db] font-[300]">Get a cost estimate  <i class="fa fa-chevron-right text-[#3498db] text-[12px] ml-2"></i></button>
+                    </div>
+                </div>
+                    <!-- card -->
+                    <div class="max-w-[100%] sm:max-w-[450px] w-full bg-[#fff] mx-3">
+                    <img src="./img/departments/dep1.jpg" class="w-full max-h-[175px ]" />
+                    <div class="w-full py-[25px] px-[20px]">
+                        <h5 class="text-[18px] font-[600] leading-[20px]">Cardiology</h5>
+                        <span class="fmr font-[300] text-[15px] text-[#999] mb-[12px] leading-[24px] inline-block">(including cardiovascular surgery)</span>
+                        <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. </p>
+                        <button class="text-[15px] text-[#3498db] font-[300]">Get a cost estimate  <i class="fa fa-chevron-right text-[#3498db] text-[12px] ml-2"></i></button>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="max-w-[100%] sm:max-w-[450px] w-full bg-[#fff] mx-3">
+                    <img src="./img/departments/dep1.jpg" class="w-full max-h-[175px ]" />
+                    <div class="w-full py-[25px] px-[20px]">
+                        <h5 class="text-[18px] font-[600] leading-[20px]">Cardiology</h5>
+                        <span class="fmr font-[300] text-[15px] text-[#999] mb-[12px] leading-[24px] inline-block">(including cardiovascular surgery)</span>
+                        <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. </p>
+                        <button class="text-[15px] text-[#3498db] font-[300]">Get a cost estimate  <i class="fa fa-chevron-right text-[#3498db] text-[12px] ml-2"></i></button>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="max-w-[100%] sm:max-w-[450px] w-full bg-[#fff] mx-3">
+                    <img src="./img/departments/dep1.jpg" class="w-full max-h-[175px ]" />
+                    <div class="w-full py-[25px] px-[20px]">
+                        <h5 class="text-[18px] font-[600] leading-[20px]">Cardiology</h5>
+                        <span class="fmr font-[300] text-[15px] text-[#999] mb-[12px] leading-[24px] inline-block">(including cardiovascular surgery)</span>
+                        <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. </p>
+                        <button class="text-[15px] text-[#3498db] font-[300]">Get a cost estimate  <i class="fa fa-chevron-right text-[#3498db] text-[12px] ml-2"></i></button>
+                    </div>
+                </div>
+                    <!-- card -->
+                    <div class="max-w-[100%] sm:max-w-[450px] w-full bg-[#fff] mx-3">
+                    <img src="./img/departments/dep1.jpg" class="w-full max-h-[175px ]" />
+                    <div class="w-full py-[25px] px-[20px]">
+                        <h5 class="text-[18px] font-[600] leading-[20px]">Cardiology</h5>
+                        <span class="fmr font-[300] text-[15px] text-[#999] mb-[12px] leading-[24px] inline-block">(including cardiovascular surgery)</span>
+                        <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. </p>
+                        <button class="text-[15px] text-[#3498db] font-[300]">Get a cost estimate  <i class="fa fa-chevron-right text-[#3498db] text-[12px] ml-2"></i></button>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="max-w-[100%] sm:max-w-[450px] w-full bg-[#fff] mx-3">
+                    <img src="./img/departments/dep1.jpg" class="w-full max-h-[175px ]" />
+                    <div class="w-full py-[25px] px-[20px]">
+                        <h5 class="text-[18px] font-[600] leading-[20px]">Cardiology</h5>
+                        <span class="fmr font-[300] text-[15px] text-[#999] mb-[12px] leading-[24px] inline-block">(including cardiovascular surgery)</span>
+                        <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. </p>
+                        <button class="text-[15px] text-[#3498db] font-[300]">Get a cost estimate  <i class="fa fa-chevron-right text-[#3498db] text-[12px] ml-2"></i></button>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="max-w-[100%] sm:max-w-[450px] w-full bg-[#fff] mx-3">
+                    <img src="./img/departments/dep1.jpg" class="w-full max-h-[175px ]" />
+                    <div class="w-full py-[25px] px-[20px]">
+                        <h5 class="text-[18px] font-[600] leading-[20px]">Cardiology</h5>
+                        <span class="fmr font-[300] text-[15px] text-[#999] mb-[12px] leading-[24px] inline-block">(including cardiovascular surgery)</span>
+                        <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. </p>
+                        <button class="text-[15px] text-[#3498db] font-[300]">Get a cost estimate  <i class="fa fa-chevron-right text-[#3498db] text-[12px] ml-2"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+        </section>
+
+        <!-- our best doctors -->
+        <section id="doctors" class="bg-[#fff] pt-[100px] pb-[130px]">
+            <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
+                <h1 class="text-[35px] sm:text-[40px] text-[#333] font-bold  before:w-[70px] before:h-[1px] before:absolute before:bg-[#3498db] before:left-[0] before:bottom-[-10px] relative">Our Best Doctors </h1>
+                <p class="text-[#999999] text-[15px] font-light	leading-6 pt-[25px]	">Sed arcu. Cras consequat.</p>                
+                <!-- <div class="w-[100%] fle x mt-[70px] gap-x-[30px ]"> -->
+                    <div class="slider-for-doctors  mt-[70px]">
+                        <!-- card -->
+                    <div class="max-w-[100%] sm:max-w-[300px] md:max-w-[285px] lg:max-w-[265px] w-full bg-[#fff] mx-4">
+                        <img src="./img/doctors/doc1.jpg" class="w-full max-h-[100%] sm:max-h-[265px]" />
+                        <div class="w-full text-center mt-[30px]">
+                            <h5 class="text-[18px] font-[600] leading-[20px]">Dr. Scott Aronson</h5>
+                            <span class="fmr font-[300] text-[15px] text-[#999] mb-[12px] leading-[24px] inline-block">Neurologist</span>
+                            <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris.</p>
+                            <button class="text-[15px] text-[#3498db] font-[300]">Get a free consultation <i class="fa fa-chevron-right text-[#3498db] text-[12px] ml-2"></i></button>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div class="max-w-[100%] sm:max-w-[300px] md:max-w-[285px] lg:max-w-[265px] w-full bg-[#fff] mx-4">
+                        <img src="./img/doctors/doc2.jpg" class="w-full max-h-[100%] sm:max-h-[265px]" />
+                        <div class="w-full text-center mt-[30px]">
+                            <h5 class="text-[18px] font-[600] leading-[20px]">Dr. Scott Aronson</h5>
+                            <span class="fmr font-[300] text-[15px] text-[#999] mb-[12px] leading-[24px] inline-block">Neurologist</span>
+                            <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris.</p>
+                            <button class="text-[15px] text-[#3498db] font-[300]">Get a free consultation <i class="fa fa-chevron-right text-[#3498db] text-[12px] ml-2"></i></button>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div class="max-w-[100%] sm:max-w-[300px] md:max-w-[285px] lg:max-w-[265px] w-full bg-[#fff] mx-4">
+                        <img src="./img/doctors/doc3.jpg" class="w-full max-h-[100%] sm:max-h-[265px]" />
+                        <div class="w-full text-center mt-[30px]">
+                            <h5 class="text-[18px] font-[600] leading-[20px]">Dr. Scott Aronson</h5>
+                            <span class="fmr font-[300] text-[15px] text-[#999] mb-[12px] leading-[24px] inline-block">Neurologist</span>
+                            <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris.</p>
+                            <button class="text-[15px] text-[#3498db] font-[300]">Get a free consultation <i class="fa fa-chevron-right text-[#3498db] text-[12px] ml-2"></i></button>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div class="max-w-[100%] sm:max-w-[300px] md:max-w-[285px] lg:max-w-[265px] w-full bg-[#fff] mx-4">
+                        <img src="./img/doctors/doc1.jpg" class="w-full max-h-[100%] sm:max-h-[265px]" />
+                        <div class="w-full text-center mt-[30px]">
+                            <h5 class="text-[18px] font-[600] leading-[20px]">Dr. Scott Aronson</h5>
+                            <span class="fmr font-[300] text-[15px] text-[#999] mb-[12px] leading-[24px] inline-block">Neurologist</span>
+                            <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris.</p>
+                            <button class="text-[15px] text-[#3498db] font-[300]">Get a free consultation <i class="fa fa-chevron-right text-[#3498db] text-[12px] ml-2"></i></button>
+                        </div>
+                    </div>       
+                    <!-- card -->
+                    <div class="max-w-[100%] sm:max-w-[300px] md:max-w-[285px] lg:max-w-[265px] w-full bg-[#fff] mx-4">
+                        <img src="./img/doctors/doc1.jpg" class="w-full max-h-[100%] sm:max-h-[265px]" />
+                        <div class="w-full text-center mt-[30px]">
+                            <h5 class="text-[18px] font-[600] leading-[20px]">Dr. Scott Aronson</h5>
+                            <span class="fmr font-[300] text-[15px] text-[#999] mb-[12px] leading-[24px] inline-block">Neurologist</span>
+                            <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris.</p>
+                            <button class="text-[15px] text-[#3498db] font-[300]">Get a free consultation <i class="fa fa-chevron-right text-[#3498db] text-[12px] ml-2"></i></button>
+                        </div>
+                    </div>      
+                    </div>                
+                <!-- </div> -->
+            </div>
+        </section>
+        
+        <!-- CTA -->
+        <section class="bg-[#363639] py-[60px]">
+            <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
+                <div class="w-full flex justify-between items-center flex-col lg:flex-row">
+                    <h5 class="text-[18] capitalize my-[14px] text-[#fff] font-500 tracking-[0.3px]">We take care of your healthy health</h5>
+                    <div class="flex justify-end items-center flex-col sm:flex-row">
+                        <span class="text-[15px] font-400 text-[#fff] m-0">Cell: (1245) 8765-432-124</span>
+                        <span class="text-[15px] font-400 text-[#3498db] mx-[16px] my-3 sm:m-0">or</span>
+                        <button class="fmr text-[15px] text-[#fff] font-[400] border-[1px] border-[#9b9b9c] rounded-[2px] pt-[12px] px-[25px] pb-[10px] bg-[transparent] m-0">Make an Appointment today</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- our services -->
+        <section id="services" class="bg-[#fff] py-[60px] sm:py-[100px] section-our-services">
+            <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
+                <div class="w-full flex justify-end">
+                    <div class="w-[100%] lg:w-[50%] pl-0 lg:pl-[7%]">
+               
+                        <h1 class="text-[35px] sm:text-[40px] text-[#333] font-bold  before:w-[70px] before:h-[1px] before:absolute before:bg-[#3498db] before:left-[0] before:bottom-[-10px] relative">Our Services </h1>
+                        <p class="text-[#999999] text-[15px] font-light	leading-6 pt-[25px]	">Morbi in sem quis dui placerat ornare.</p>
+                        <div class="w-full flex flex-wrap gap-x-[4%] mt-[70px]">
+                            <div class="w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">03.</span>
+                                    <span class="text-[#333] text-[18px] font-[600] mb-[20px] leading-[20px]">General & <br /> Surgery</span>
+                                </div>
+                                <p class="frr text-[15px] text-[#666] font-[300] leading-[24px] mb-[10px]">
+                                    Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+                                </p>
+                            </div>
+                            <div class="w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">03.</span>
+                                    <span class="text-[#333] text-[18px] font-[600] mb-[20px] leading-[20px]">General & <br /> Surgery</span>
+                                </div>
+                                <p class="frr text-[15px] text-[#666] font-[300] leading-[24px] mb-[10px]">
+                                    Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+                                </p>
+                            </div>
+                            <div class="w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">03.</span>
+                                    <span class="text-[#333] text-[18px] font-[600] mb-[20px] leading-[20px]">General & <br /> Surgery</span>
+                                </div>
+                                <p class="frr text-[15px] text-[#666] font-[300] leading-[24px] mb-[10px]">
+                                    Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+                                </p>
+                            </div>
+                            <div class="w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">03.</span>
+                                    <span class="text-[#333] text-[18px] font-[600] mb-[20px] leading-[20px]">General & <br /> Surgery</span>
+                                </div>
+                                <p class="frr text-[15px] text-[#666] font-[300] leading-[24px] mb-[10px]">
+                                    Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+                                </p>
+                            </div>
+                            <div class="w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">03.</span>
+                                    <span class="text-[#333] text-[18px] font-[600] mb-[20px] leading-[20px]">General & <br /> Surgery</span>
+                                </div>
+                                <p class="frr text-[15px] text-[#666] font-[300] leading-[24px] mb-[10px]">
+                                    Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+                                </p>
+                            </div>
+                            <div class="w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">03.</span>
+                                    <span class="text-[#333] text-[18px] font-[600] mb-[20px] leading-[20px]">General & <br /> Surgery</span>
+                                </div>
+                                <p class="frr text-[15px] text-[#666] font-[300] leading-[24px] mb-[10px]">
+                                    Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </section>  
+                
+        <!-- testimonial -->
+        <section id="" class="bg-[#3498db] py-[60px] sm:py-[100px]">
+            <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
+            <div class="text-center">
+                <h1 class="text-[40px] text-[#fff] font-bold capitalize">
+                what customers say
+                </h1>
+                
+                <div class="slider-for-testimonial max-w-[860px] mx-auto">
+                <!-- card -->
+                <div class="text-center max-w-[860px ] mx-auto mt-[40px]">
+                    <img
+                    src="./img/profiles/profile2.jpg"
+                    class="w-[70px] h-[70px] rounded-[50px] shadow-lg mx-auto"
+                    />
+                    <p
+                    class="text-[#fff] text-[18px] mb-[25px] font-[300] leading-[30px] pt-[35px] italic"
+                    >
+                    “ Donec nec justo eget felis facilisis fermentum. Aliquam
+                    porttitor mauris sit amet orci. Aenean dignissim pellentesque
+                    felis. Morbi in sem quis dui placerat ornare. Pellentesque odio
+                    nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. ”
+                    </p>
+                    <h6 class="text-[15px] text-[#fff] font-[600]">Jhon Doe</h6>
+                    <span class="text-[#fff] text-[15px] font-[300] mb-[40px]"
+                    >Web Developer</span
+                    >
+                </div>
+                <!-- card -->
+                <div class="text-center max-w-[860px ] mx-auto mt-[40px]">
+                    <img
+                    src="./img/profiles/profile2.jpg"
+                    class="w-[70px] h-[70px] rounded-[50px] shadow-lg mx-auto"
+                    />
+                    <p
+                    class="text-[#fff] text-[18px] mb-[25px] font-[300] leading-[30px] pt-[35px] italic"
+                    >
+                    “ Donec nec justo eget felis facilisis fermentum. Aliquam
+                    porttitor mauris sit amet orci. Aenean dignissim pellentesque
+                    felis. Morbi in sem quis dui placerat ornare. Pellentesque odio
+                    nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. ”
+                    </p>
+                    <h6 class="text-[15px] text-[#fff] font-[600]">Jhon Doe</h6>
+                    <span class="text-[#fff] text-[15px] font-[300] mb-[40px]"
+                    >Web Developer</span
+                    >
+                </div>
+                <!-- card -->
+                <div class="text-center max-w-[860px ] mx-auto mt-[40px]">
+                    <img
+                    src="./img/profiles/profile2.jpg"
+                    class="w-[70px] h-[70px] rounded-[50px] shadow-lg mx-auto"
+                    />
+                    <p
+                    class="text-[#fff] text-[18px] mb-[25px] font-[300] leading-[30px] pt-[35px] italic"
+                    >
+                    “ Donec nec justo eget felis facilisis fermentum. Aliquam
+                    porttitor mauris sit amet orci. Aenean dignissim pellentesque
+                    felis. Morbi in sem quis dui placerat ornare. Pellentesque odio
+                    nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. ”
+                    </p>
+                    <h6 class="text-[15px] text-[#fff] font-[600]">Jhon Doe</h6>
+                    <span class="text-[#fff] text-[15px] font-[300] mb-[40px]"
+                    >Web Developer</span
+                    >
+                </div>
+                <!-- card -->
+                <div class="text-center max-w-[860px ] mx-auto mt-[40px]">
+                    <img
+                    src="./img/profiles/profile2.jpg"
+                    class="w-[70px] h-[70px] rounded-[50px] shadow-lg mx-auto"
+                    />
+                    <p
+                    class="text-[#fff] text-[18px] mb-[25px] font-[300] leading-[30px] pt-[35px] italic"
+                    >
+                    “ Donec nec justo eget felis facilisis fermentum. Aliquam
+                    porttitor mauris sit amet orci. Aenean dignissim pellentesque
+                    felis. Morbi in sem quis dui placerat ornare. Pellentesque odio
+                    nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. ”
+                    </p>
+                    <h6 class="text-[15px] text-[#fff] font-[600]">Jhon Doe</h6>
+                    <span class="text-[#fff] text-[15px] font-[300] mb-[40px]"
+                    >Web Developer</span
+                    >
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+ 
+        <!-- news -->
+        <section id="news" class="bg-[#fafafa] py-[60px] sm:py-[100px] border-[1px] border-[#eee]">
+            <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
+                <h1 class="text-[35px] sm:text-[40px] text-[#333] font-bold  before:w-[70px] before:h-[1px] before:absolute before:bg-[#3498db] before:left-[0] before:bottom-[-10px] relative">Latest Tips and News </h1>
+                <p class="text-[#999999] text-[15px] font-light	leading-6 pt-[25px]	">Sed arcu. Cras consequat.</p>                
+                    <div id="all_posts_div" class="w-[100%] max-h-[490px] overflow-hidden flex flex-wrap justify-around lg:justify-between mt-[70px] gap-x-[30px] gap-y-[40px]">
+                        
+                            <!-- card -->
+                        <div class="max-w-[265px] w-full">
+                            <img src="./img/doctors/doc1.jpg" class="w-full max-h-[265px]" />
+                            <div class="w-full text-center mt-[30px]">
+                                <span class="fmr font-[300] text-[15px] text-[#999] mb-[10px] leading-[24px] inline-block">12 December 2018</span>
+                                <h5 class="text-[18px] font-[600] leading-[20px] mb-[10px]">Praesent placerat risus.</h5>
+                                <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Donec odio urn nibh viverra mattis. </p>
+                                <button class="text-[15px] text-[#3498db] font-[300]">Read More</button>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="max-w-[265px] w-full">
+                            <img src="./img/doctors/doc2.jpg" class="w-full max-h-[265px]" />
+                            <div class="w-full text-center mt-[30px]">
+                                <span class="fmr font-[300] text-[15px] text-[#999] mb-[10px] leading-[24px] inline-block">Neurologist</span>
+                                <h5 class="text-[18px] font-[600] leading-[20px] mb-[10px]">Dr. Scott Aronson</h5>
+                                <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris.</p>
+                                <button class="text-[15px] text-[#3498db] font-[300]">Read More</button>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="max-w-[265px] w-full">
+                            <img src="./img/doctors/doc3.jpg" class="w-full max-h-[265px]" />
+                            <div class="w-full text-center mt-[30px]">
+                                <span class="fmr font-[300] text-[15px] text-[#999] mb-[10px] leading-[24px] inline-block">Neurologist</span>
+                                <h5 class="text-[18px] font-[600] leading-[20px] mb-[10px]">Dr. Scott Aronson</h5>
+                                <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris.</p>
+                                <button class="text-[15px] text-[#3498db] font-[300]">Read More</button>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="max-w-[265px] w-full">
+                            <img src="./img/doctors/doc1.jpg" class="w-full max-h-[265px]" />
+                            <div class="w-full text-center mt-[30px]">
+                                <span class="fmr font-[300] text-[15px] text-[#999] mb-[10px] leading-[24px] inline-block">Neurologist</span>
+                                <h5 class="text-[18px] font-[600] leading-[20px] mb-[10px]">Dr. Scott Aronson</h5>
+                                <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris.</p>
+                                <button class="text-[15px] text-[#3498db] font-[300]">Read More</button>
+                            </div>
+                        </div>       
+                        <!-- card -->
+                        <div class="max-w-[265px] w-full">
+                            <img src="./img/doctors/doc1.jpg" class="w-full max-h-[265px]" />
+                            <div class="w-full text-center mt-[30px]">
+                                <span class="fmr font-[300] text-[15px] text-[#999] mb-[10px] leading-[24px] inline-block">Neurologist</span>
+                                <h5 class="text-[18px] font-[600] leading-[20px] mb-[10px]">Dr. Scott Aronson</h5>
+                                <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris.</p>
+                                <button class="text-[15px] text-[#3498db] font-[300]">Read More</button>
+                            </div>
+                        </div>      
+                         <!-- card -->
+                         <div class="max-w-[265px] w-full">
+                            <img src="./img/doctors/doc1.jpg" class="w-full max-h-[265px]" />
+                            <div class="w-full text-center mt-[30px]">
+                                <span class="fmr font-[300] text-[15px] text-[#999] mb-[10px] leading-[24px] inline-block">12 December 2018</span>
+                                <h5 class="text-[18px] font-[600] leading-[20px] mb-[10px]">Praesent placerat risus.</h5>
+                                <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Donec odio urn nibh viverra mattis. </p>
+                                <button class="text-[15px] text-[#3498db] font-[300]">Read More</button>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="max-w-[265px] w-full">
+                            <img src="./img/doctors/doc2.jpg" class="w-full max-h-[265px]" />
+                            <div class="w-full text-center mt-[30px]">
+                                <span class="fmr font-[300] text-[15px] text-[#999] mb-[10px] leading-[24px] inline-block">Neurologist</span>
+                                <h5 class="text-[18px] font-[600] leading-[20px] mb-[10px]">Dr. Scott Aronson</h5>
+                                <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris.</p>
+                                <button class="text-[15px] text-[#3498db] font-[300]">Read More</button>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="max-w-[265px] w-full">
+                            <img src="./img/doctors/doc3.jpg" class="w-full max-h-[265px]" />
+                            <div class="w-full text-center mt-[30px]">
+                                <span class="fmr font-[300] text-[15px] text-[#999] mb-[10px] leading-[24px] inline-block">Neurologist</span>
+                                <h5 class="text-[18px] font-[600] leading-[20px] mb-[10px]">Dr. Scott Aronson</h5>
+                                <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris.</p>
+                                <button class="text-[15px] text-[#3498db] font-[300]">Read More</button>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="max-w-[265px] w-full">
+                            <img src="./img/doctors/doc1.jpg" class="w-full max-h-[265px]" />
+                            <div class="w-full text-center mt-[30px]">
+                                <span class="fmr font-[300] text-[15px] text-[#999] mb-[10px] leading-[24px] inline-block">Neurologist</span>
+                                <h5 class="text-[18px] font-[600] leading-[20px] mb-[10px]">Dr. Scott Aronson</h5>
+                                <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris.</p>
+                                <button class="text-[15px] text-[#3498db] font-[300]">Read More</button>
+                            </div>
+                        </div>   
+                       <!-- card --> 
+                        <div class="max-w-[265px] w-full">
+                            <img src="./img/doctors/doc1.jpg" class="w-full max-h-[265px]" />
+                            <div class="w-full text-center mt-[30px]">
+                                <span class="fmr font-[300] text-[15px] text-[#999] mb-[10px] leading-[24px] inline-block">12 December 2018</span>
+                                <h5 class="text-[18px] font-[600] leading-[20px] mb-[10px]">Praesent placerat risus.</h5>
+                                <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Donec odio urn nibh viverra mattis. </p>
+                                <button class="text-[15px] text-[#3498db] font-[300]">Read More</button>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="max-w-[265px] w-full">
+                            <img src="./img/doctors/doc2.jpg" class="w-full max-h-[265px]" />
+                            <div class="w-full text-center mt-[30px]">
+                                <span class="fmr font-[300] text-[15px] text-[#999] mb-[10px] leading-[24px] inline-block">Neurologist</span>
+                                <h5 class="text-[18px] font-[600] leading-[20px] mb-[10px]">Dr. Scott Aronson</h5>
+                                <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris.</p>
+                                <button class="text-[15px] text-[#3498db] font-[300]">Read More</button>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="max-w-[265px] w-full">
+                            <img src="./img/doctors/doc3.jpg" class="w-full max-h-[265px]" />
+                            <div class="w-full text-center mt-[30px]">
+                                <span class="fmr font-[300] text-[15px] text-[#999] mb-[10px] leading-[24px] inline-block">Neurologist</span>
+                                <h5 class="text-[18px] font-[600] leading-[20px] mb-[10px]">Dr. Scott Aronson</h5>
+                                <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris.</p>
+                                <button class="text-[15px] text-[#3498db] font-[300]">Read More</button>
+                            </div>
+                        </div>
+                       
+                                    
+                    </div>
+                    <div class="w-full pt-[20px]">
+                        <button onclick="viewAllPosts()" id="all_posts_div_btn" class="fmr text-[12px] text-[#3498db] font-[600] block border-[1px] border-[#3498db] rounded-[2px] pt-[12px] px-[25px] pb-[10px] bg-[transparent] uppercase mx-auto">View all posts</button>
+                    </div>
+            </div>
+        </section>
+
+        <!-- get-in-touch -->
+        <section id="contact" class="bg-[#fff] py-[60px] sm:py-[100px]">
+            <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
+                <div class="w-full flex">
+                    <div class="w-[100%]">
+                        <h1 class="text-[35px] sm:text-[40px] text-[#333] font-bold  before:w-[70px] before:h-[1px] before:absolute before:bg-[#3498db] before:left-[0] before:bottom-[-10px] relative">Get in Touch</h1>
+                        <p class="text-[#999999] text-[15px] font-light	leading-6 pt-[25px]	">Sed arcu. Cras consequat.</p>
+                        <div class="w-full flex items-center flex-col md:flex-row">
+                            <form class="w-full md:w-[63%] flex flex-wrap gap-x-[4%] mt-[70px]">
+                                <input class="w-[48%] fmr bg-[#fafafa] outline-none rounded-[2px] border-[1px] border-[#e1e1e1] mb-[30px] text-[#999] text-[15px] py-[12px] px-[20px]" type="text" placeholder="Name*" required />
+                                <input class="w-[48%] fmr bg-[#fafafa] outline-none rounded-[2px] border-[1px] border-[#e1e1e1] mb-[30px] text-[#999] text-[15px] py-[12px] px-[20px]" type="text" placeholder="Email*" required />
+                                <input class="w-[48%] fmr bg-[#fafafa] outline-none rounded-[2px] border-[1px] border-[#e1e1e1] mb-[30px] text-[#999] text-[15px] py-[12px] px-[20px]" type="text" placeholder="Subject*" required />
+                                <input class="w-[48%] fmr bg-[#fafafa] outline-none rounded-[2px] border-[1px] border-[#e1e1e1] mb-[30px] text-[#999] text-[15px] py-[12px] px-[20px]" type="text" placeholder="Website*" required />
+                                <textarea class="w-full fmr bg-[#fafafa] outline-none rounded-[2px] border-[1px] border-[#e1e1e1] mb-[30px] text-[#999] text-[15px] py-[12px] px-[20px]" placeholder="*Message*" rows="5" value="sdafd"></textarea>
+                                <button class="fmr text-[15px] text-[#3498db] font-[600] border-[1px] border-[#3498db] rounded-[2px] pt-[12px] px-[25px] pb-[10px] bg-[transparent] m-0">Submit</button>
+                            </form>                            
+                            <div class="w-full md:w-[37%] flex flex-col gap-y-[25px] pl-0 md:pl-[9%] pt-[50px] md:pt-0">
+
+                                <div class="flex">
+                                    <i class="fa fa-location-arrow mr-3" aria-hidden="true"></i>
+                                    <div class="content-post">
+                                        <h2 class="text-[18px] font-[600] text-[#333] leading-[20px] mb-[10px]">Our Address</h2>
+                                        <p class="frr text-[14px] font-[300] leading-[24px] text-[#666]">2292 Peachtree Rd NW <br> Atlanta, GA, United States</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex">
+                                    <i class="fa fa-phone mr-3" aria-hidden="true"></i>
+                                    <div class="content-post">
+                                            <h2 class="text-[18px] font-[600] text-[#333] leading-[20px] mb-[10px]">Contact us</h2>
+                                        <p class="frr text-[14px] font-[300] leading-[24px] text-[#666]">+1 800 787 7000 <br> doctor@medicalclinic.com</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex">
+                                    <i class="fa fa-clock-o mr-3" aria-hidden="true"></i>
+                                    <div class="content-post">
+                                            <h2 class="text-[18px] font-[600] text-[#333] leading-[20px] mb-[10px]">Office Hours</h2>
+                                        <p class="frr text-[14px] font-[300] leading-[24px] text-[#666]">Monday to Friday     8:00am - 17:00pm <br> Saturday, Sunday     9:00am - 19:00pm</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14157.92514030008!2d-122.38790849795953!3d37.782557830371836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580bf2ab76475%3A0x1c82fe532473cbc2!2sJapantown%2C%20San%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1659687053373!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <footer class="text-center bg-[#333] pt-[60px] sm:pt-[100px] text-[#fff] px-[5%] sm:px-0">
+            <div class="max-w-[600px] mx-auto text-center">
+                <h4 class="text-[24px] mb-[14px] font-[600]">Stay informed and healthy</h4>
+                    <p class="text-[#ccc] font-[300] leading-[24px] text-[15px]">
+                        If you want to receive monthly updates from us just pop your email in the box.
+                    </p>
+                    <div class="flex pt-9 gap-x-3 flex-col sm:flex-row">
+                        <input class="w-full sm:w-[67%] fmr bg-[#fff] outline-none rounded-[4px] border-[1px] border-[#333] mb-[10px] sm:mb-[30px] text-[#999] text-[15px] py-[12px] px-[20px]" type="text" placeholder="Enter Your Email Address*" required />
+                        <button class="fmr text-[15px] text-[#fff] font-[400] uppercase w-[33%] h-[50px] border-[1px] border-[#9b9b9c] rounded-[2px] pt-[12px] px-[25px] pb-[10px] bg-[transparent] m-0">Subscribe</button>
+                    </div>
+                    <div class="flex justify-center pt-[40px] pb-[70px] gap-x-4">
+                        <i class="fa fa-facebook border-[1px] border-[#3498db] text-[18px] w-[50px] h-[50px] text-center leading-[48px] rounded-[50px]"></i>
+                        <i class="fa fa-twitter border-[1px] border-[#3498db] text-[18px] w-[50px] h-[50px] text-center leading-[48px] rounded-[50px]"></i>
+                        <i class="fa fa-instagram border-[1px] border-[#3498db] text-[18px] w-[50px] h-[50px] text-center leading-[48px] rounded-[50px]"></i>
+                        <i class="fa fa-linkedin border-[1px] border-[#3498db] text-[18px] w-[50px] h-[50px] text-center leading-[48px] rounded-[50px]"></i>
+                        <i class="fa fa-youtube border-[1px] border-[#3498db] text-[18px] w-[50px] h-[50px] text-center leading-[48px] rounded-[50px]"></i>
+                    </div>
+            </div>
+            <p class="py-[20px] px-[15px] border-[1px] border-[#444] text-[15px] text-[#666] leading-[24px]">
+                © Copyright 2018. "Medoc" by Nunforest. All rights reserved.
+            </p>
+        </footer>
+            
+        <script src="./assets/js/jquery.min.js"></script>
+        <script src="./assets/js/slick.min.js"></script>
+        <script>
+        $(".slider-for").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+        });
+        $(".slider-for-departments").slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: true,
+            responsive: [
+                {
+                breakpoint: 1100,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                  {
+                breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                  {
+                breakpoint: 640,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                },
+            ]
+        });
+        $(".slider-for-doctors").slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: true,
+            responsive: [
+                {
+                breakpoint: 1100,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                  {
+                breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                  {
+                breakpoint: 640,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                },
+            ]
+        });
+        $(".slider-for-testimonial").slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            adaptiveHeight: true,
+            prevArrow:
+            '<i class="fa fa-chevron-left text-[#fff] slick-prev-icon"></i> ',
+            nextArrow:
+            '<i class="fa fa-chevron-right text-[#fff] slick-next-icon"></i> ',
+            dots: true,
+        });
+        </script>
+        <script type="text/javascript">
+        function myFunction() {
+            var navbar = document.getElementById("nav");
+            navbar.classList.toggle("show");
+        }
+        var header = document.getElementById("header");
+        window.onscroll = function () {
+            scrollFunction();
+        };
+        function scrollFunction() {
+            if (
+            document.body.scrollTop > 500 ||
+            document.documentElement.scrollTop > 20
+            ) {
+            // console.log("yes");
+            header.classList.add("active");
+            } else {
+            // console.log("no");
+            header.classList.remove("active");
+            }
+        }
+        </script>
+        <script>
+        // counter code
+        function counter(id, start, end, duration) {
+            let obj = document.getElementById(id),
+            current = start,
+            range = end - start,
+            increment = end > start ? 1 : -1,
+            step = Math.abs(Math.floor(duration / range)),
+            timer = setInterval(() => {
+                current += increment;
+                obj.textContent = current;
+                if (current == end) {
+                clearInterval(timer);
+                }
+            }, step);
+        }
+
+        var element = document.querySelector(".statistics");
+        // Get its bounding client rectangle
+        var bounding = element.getBoundingClientRect();
+        function isInViewPort(element) {
+            // Get the bounding client rectangle position in the viewport
+            var bounding = element.getBoundingClientRect();
+            if (bounding.top < 270) {
+            // console.log("call");
+            counter("count1", 0, 125, 3000);
+            counter("count2", 100, 750, 2000);
+            counter("count3", 0, 150, 4000);
+            counter("count4", 0, 250, 5000);
+            }
+        }
+        window.addEventListener(
+            "scroll",
+            function (event) {
+            isInViewPort(element);
+            },
+            false
+        );
+        </script>
+        <script>
+            function viewAllPosts() {
+                document.getElementById('all_posts_div').style.maxHeight = '2000px';
+                document.getElementById('all_posts_div_btn').style.display = 'none';
+            }
+        </script>
+        <script>
+            document.addEventListener('scroll', function(e) {
+      
+                let home = document.getElementById('home').getBoundingClientRect();
+                let about = document.getElementById('about').getBoundingClientRect();
+                let appointment = document.getElementById('appointment').getBoundingClientRect();
+                let departments = document.getElementById('departments').getBoundingClientRect();
+                let doctors = document.getElementById('doctors').getBoundingClientRect();
+                let services = document.getElementById('services').getBoundingClientRect();
+                let news = document.getElementById('news').getBoundingClientRect();
+                let contact = document.getElementById('contact').getBoundingClientRect(); 
+
+console.log("about",about)
+console.log("about.top",about.top)
+console.log("about.height",about.height)
+
+                // console.log("home",home)
+                // console.log("about",document.getElementById('about').getBoundingClientRect())
+                // console.log("appointment",document.getElementById('appointment').getBoundingClientRect())
+                // console.log("departments",departments)
+                // console.log("doctors",doctors)
+                // console.log("services",services)
+                // console.log("news",news)
+                // console.log("contact",contact)
+
+                let menu_home = document.getElementById('menu_home');
+                let menu_about = document.getElementById('menu_about');
+                let menu_appointment = document.getElementById('menu_appointment');
+                let menu_departments = document.getElementById('menu_departments');
+                let menu_doctors = document.getElementById('menu_doctors');
+                let menu_services = document.getElementById('menu_services');
+                let menu_news = document.getElementById('menu_news');
+                let menu_contact = document.getElementById('menu_contact');
+                                
+                var elems = document.querySelectorAll(".menu-item");
+
+
+                if(home.top <140 && home.top >= -home.height) {
+                        [].forEach.call(elems, function(el) {
+                            el.classList.remove("active");
+                        });
+                        document.getElementById('menu_home').classList.add("active");
+                        } else {
+                            document.getElementById('menu_home').classList.remove("active");
+                        }
+
+
+                    if(about.top <140 && about.top >= -about.height) {
+                        [].forEach.call(elems, function(el) {
+                            el.classList.remove("active");
+                        });
+                        document.getElementById('menu_about').classList.add("active");
+                        } else {
+                            document.getElementById('menu_about').classList.remove("active");
+                        }
+
+                        if(appointment.top <140 && appointment.top >= -appointment.height) {
+                            [].forEach.call(elems, function(el) {
+                                el.classList.remove("active");
+                            });
+                            document.getElementById('menu_appointment').classList.add("active");
+                            } else {
+                                document.getElementById('menu_appointment').classList.remove("active");
+                            }
+
+                        if(departments.top <140 && departments.top >= -departments.height) {
+                            [].forEach.call(elems, function(el) {
+                                el.classList.remove("active");
+                            });
+                            document.getElementById('menu_departments').classList.add("active");
+                            } else {
+                                document.getElementById('menu_departments').classList.remove("active");
+                            }
+
+                        if(doctors.top <140 && doctors.top >= -doctors.height) {
+                            [].forEach.call(elems, function(el) {
+                                el.classList.remove("active");
+                            });
+                            document.getElementById('menu_doctors').classList.add("active");
+                            } else {
+                                document.getElementById('menu_doctors').classList.remove("active");
+                            }
+
+                        if(services.top <140 && services.top >= -services.height) {
+                            [].forEach.call(elems, function(el) {
+                                el.classList.remove("active");
+                            });
+                            document.getElementById('menu_services').classList.add("active");
+                            } else {
+                                document.getElementById('menu_services').classList.remove("active");
+                            }
+
+                        if(news.top <140 && news.top >= -news.height) {
+                            [].forEach.call(elems, function(el) {
+                                el.classList.remove("active");
+                            });
+                            document.getElementById('menu_news').classList.add("active");
+                            } else {
+                                document.getElementById('menu_news').classList.remove("active");
+                            }
+
+                        if(contact.top <140 && contact.top >= -contact.height) {
+                            [].forEach.call(elems, function(el) {
+                                el.classList.remove("active");
+                            });
+                            document.getElementById('menu_contact').classList.add("active");
+                            } else {
+                                document.getElementById('menu_contact').classList.remove("active");
+                            }
+
+                })
+        </script>
+        <script>
+                function  activeMenu (elemId) {
+                    var elems = document.querySelectorAll(".menu-item");
+                    [].forEach.call(elems, function(el) {
+                        el.classList.remove("active");
+                    });
+                     document.getElementById(elemId).classList.add("active");
+                }
+        </script>
+</body>
+</html>
+
+
