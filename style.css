@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;0,600;1,300;1,400&display=swap");
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 * {
   margin: 0;
@@ -17,8 +17,11 @@ html {
 .frr {
   font-family: "Rubik", sans-serif;
 }
-body {
-  /* background-color: #f7f7f7; */
+.max-h-500 {
+    max-height: 500px !important;
+}
+.text-orange {
+    color: rgb(253, 197, 92) !important;
 }
 nav {
   display: inline-block;
@@ -103,20 +106,20 @@ button a {
   color: #0a0a0a;
 }
 @media (min-width: 991px) and (max-width: 1040px) {
-    #nav {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
+  #nav {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
-@media (min-width: 991px){
-    .logo.for-md {
-        display: none;
-    }
-    header ul li a.active {
-        position: relative;
-    }
-    header ul li a.active:before {
-        content: '';
+@media (min-width: 991px) {
+  .logo.for-md {
+    display: none;
+  }
+  header ul li a.active {
+    position: relative;
+  }
+  header ul li a.active:before {
+    content: "";
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -125,16 +128,16 @@ button a {
     width: 100%;
     height: 3px;
     background: #3498db;
-    }
+  }
 }
 
 @media (max-width: 991px) {
-    section#home {
-        margin-top: 90px;
-    }
-    header.active nav {
-        margin-top: 90px;
-    }
+  section#home {
+    margin-top: 90px;
+  }
+  header.active nav {
+    margin-top: 90px;
+  }
   .toggle-btn {
     display: block;
   }
@@ -150,13 +153,13 @@ button a {
     width: 100%;
   }
   nav.show {
-      display: flex;
+    display: flex;
     height: auto;
     /* margin-top: 90px; */
     margin-top: 90px;
     justify-content: center;
     flex-direction: column;
-    padding: 2% 20% 5% 20%;
+    padding: 2% 8% 5% 8%;
     position: fixed;
     top: 0;
   }
@@ -183,10 +186,27 @@ button a {
   background-size: cover;
 }
 /* our-services section */
-.section-our-services {
+.section-our-services,
+.affiliated-hospitals,
+.accepted-insurance,
+.clinical-interests,
+.lang-spoken {
   position: relative;
 }
-.section-our-services:before {
+.affiliated-hospitals:before,
+.clinical-interests:before {
+  position: absolute;
+  content: "";
+  background-image: url(img/home/our-services.jpg);
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-size: cover;
+}
+.section-our-services:before,
+.accepted-insurance:before,
+.lang-spoken:before {
   position: absolute;
   content: "";
   background-image: url(img/home/our-services.jpg);
@@ -197,80 +217,113 @@ button a {
   background-size: cover;
 }
 .slider-for-departments {
-    position: relative;
+  position: relative;
 }
 .slider-for-departments .slick-dots li button {
-    background-color: #3498db;
-    border-radius: 50px;
-    width: 12px;
-    height: 12px;
-    margin-top: 30px;
+  background-color: #3498db;
+  border-radius: 50px;
+  width: 12px;
+  height: 12px;
+  margin-top: 30px;
 }
 .slider-for-departments .slick-dots {
-    bottom: -50px;
+  bottom: -50px;
 }
-.slider-for-doctors  .slick-dots li button {
-    background-color: #3498db;
-    border-radius: 50px;
-    width: 12px;
-    height: 12px;
-    margin-top: 30px;
+.slider-for-doctors .slick-dots li button {
+  background-color: #3498db;
+  border-radius: 50px;
+  width: 12px;
+  height: 12px;
+  margin-top: 30px;
 }
-.slider-for-doctors  .slick-dots {
-    bottom: -50px;
+.slider-for-doctors .slick-dots {
+  bottom: -50px;
 }
 
 .slider-for-testimonial .slick-next-icon {
-    position: absolute;
-    right: 345px;
-    top: 70px;
-    z-index: 3;
+  position: absolute;
+  right: 345px;
+  top: 70px;
+  z-index: 3;
 }
 .slider-for-testimonial .slick-prev-icon {
-    position: absolute;
-    left: 345px;
-    top: 70px;
-    z-index: 3;
+  position: absolute;
+  left: 345px;
+  top: 70px;
+  z-index: 3;
 }
 .slider-for-testimonial .slick-dots {
-    bottom: -50px;
+  bottom: -50px;
 }
 .slider-for-testimonial .slick-dots li button {
-    background-color: #fff;
-    border-radius: 50px;
-    width: 12px;
-    height: 12px;
-    margin-top: 30px;
+  background-color: #fff;
+  border-radius: 50px;
+  width: 12px;
+  height: 12px;
+  margin-top: 30px;
 }
 iframe {
-    width: 100%;
+  width: 100%;
 }
 #all_posts_div {
-    transition: all 1s ease;
+  transition: all 1s ease;
+}
+@media (max-width: 1024px) {
+  .section-appointment:before,
+  .section-our-services:before,
+  .affiliated-hospitals:before,
+  .accepted-insurance:before,
+  .clinical-interests:before,
+  .lang-spoken:before {
+    position: relative;
+  }
+}
+@media (max-width: 991px) {
+  header .nav-wrapper {
+    background: #fff;
+    border-bottom: 1px solid #efefef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .nav-wrapper .logo {
+    margin-left: 10%;
+  }
+  header .nav-wrapper .logo img {
+    padding: 0;
+  }
+  .banner-content-div {
+    padding-top: 5% !important;
+  }
+  
+.max-h-500 {
+    max-height: 1070px !important;
+}
 }
 
-@media(max-width: 1024px) {
-    .section-appointment:before, .section-our-services:before {
-        position: relative;
-    }
+@media (min-width: 640px) and (max-width: 991px) {
+  #home img {
+    height: 500px;
+    object-fit: cover;
+  }
 }
-@media(max-width: 991px) {
-    header .nav-wrapper {
-        background: #fff;
-        border-bottom: 1px solid #efefef;
-        display: flex;
-        justify-content: space-between;
-        align-items: center
-    }
-    header .nav-wrapper .logo {
-        margin-left: 10%;
-    }
-    header .nav-wrapper .logo img {
-        padding: 0;
-    }
+
+@media (max-width: 640px) {
+  .toggle-btn {
+    right: 30px;
+  }
 }
-@media(max-width: 640px) {
-    .toggle-btn { 
-        right: 30px;
-    }
+@media (max-width: 610px) {
+  .banner-img {
+    height: 400px;
+  }
+}
+@media (max-width: 430px) {
+  .section-our-services .sm-box,
+  .affiliated-hospitals .sm-box,
+  .accepted-insurance .sm-box,
+  .clinical-interests .sm-box,
+  .lang-spoken .sm-box {
+    width: 100%;
+  }
 }
