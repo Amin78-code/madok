@@ -19,7 +19,7 @@
     <header id="header">
        <div class="nav-wrapper">
         <div class="logo for-md">
-            <img class="pt-[15px]" src="./img/logo.png" alt="" />
+            <img class="mt-[-11px] w-[100px]" src="./img/logos/logo.png" alt="" />
            </div>
            <div
            class="toggle-btn border-[1px] border-[#ddd] rounded-[4px] px-[9px] py-[5px]"
@@ -33,18 +33,18 @@
             class="left-[50%] fixed translate-x-[-50%] w-full max-w-[1170px] h-[93px] mt-[20px]"
             >
                 <div class="logo">
-                 <img class="pt-[15px]" src="./img/logo.png" alt="" />
+                 <img class="mt-[-11px] w-[100px]" src="./img/logos/logo.png" alt="" />
                 </div>
                 <div  class="nav-div">
                     <ul>
-                        <li><a href="#home" onclick="activeMenu('menu_home')" id="menu_home" class="menu-item active">HOME</a></li>
-                        <li><a href="#about" onclick="activeMenu('menu_about')" id="menu_about" class="menu-item" >ABOUT</a></li>
-                        <li><a href="#appointment" onclick="activeMenu('menu_appointment')" id="menu_appointment" class="menu-item">APPOINTMENT</a></li>
-                        <li><a href="#departments" onclick="activeMenu('menu_departments')" id="menu_departments" class="menu-item">DEPARTMENTS</a></li>
-                        <li><a href="#doctors" onclick="activeMenu('menu_doctors')" id="menu_doctors" class="menu-item">DOCTORS</a></li>
-                        <li><a href="#services" onclick="activeMenu('menu_services')" id="menu_services" class="menu-item">SERVICES</a></li>
-                        <li><a href="#news" onclick="activeMenu('menu_news')" id="menu_news" class="menu-item">NEWS</a></li>
-                        <li><a href="#contact" onclick="activeMenu('menu_contact')" id="menu_contact" class="menu-item">CONTACTS</a></li>
+                        <li class="font-[600]"><a href="#home" onclick="activeMenu('menu_home')" id="menu_home" class="menu-item active">HOME</a></li>
+                        <li class="font-[600]"><a href="#about" onclick="activeMenu('menu_about')" id="menu_about" class="menu-item" >ABOUT</a></li>
+                        <li class="font-[600]"><a href="#appointment" onclick="activeMenu('menu_appointment')" id="menu_appointment" class="menu-item">APPOINTMENT</a></li>
+                        <li class="font-[600]"><a href="#departments" onclick="activeMenu('menu_departments')" id="menu_departments" class="menu-item">DEPARTMENTS</a></li>
+                        <li class="font-[600]"><a href="#doctors" onclick="activeMenu('menu_doctors')" id="menu_doctors" class="menu-item">DOCTORS</a></li>
+                        <li class="font-[600]"><a href="#services" onclick="activeMenu('menu_services')" id="menu_services" class="menu-item">SERVICES</a></li>
+                        <li class="font-[600]"><a href="#news" onclick="activeMenu('menu_news')" id="menu_news" class="menu-item">NEWS</a></li>
+                        <li class="font-[600]"><a href="#contact" onclick="activeMenu('menu_contact')" id="menu_contact" class="menu-item">CONTACTS</a></li>
                     </ul>
                 </div>
             </nav>
@@ -55,7 +55,7 @@
     <section id="home" class="">
         <!-- <div class="slider-for z-[-1] relative"> -->
           <div class="w-full relative">
-            <img src="./img/home/slide1.jpg" alt="image" class="w-full brightness-75 banner-img" />
+            <img src="./img/home/slide1.jpg" alt="image" class="w-fulls banner-img" />
             <div
               class="banner-content-div absolute w-full h-[100vh] left-0 right-0 top-0 bottom-0 pt-[6%] sm:pt-[14% ] md:pt-[14%] lg:pt-[14%] pl-[8%] sm:pl-[13%] flex flex-col justify-cente r"
             >
@@ -134,39 +134,37 @@
         <!-- </div> -->
     </section>
 
+    <!-- about company -->
+    <section id="about" class="bg-[#fff] pt-[60px] pb-[20px] sm:pt-[80px] sm:pb-[20px]">
+        <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
+            <div class="title-section ml-[auto] mr-[auto] ml-[15px] mr-[15px]">
+                <h1 class="text-[35px] sm:text-[40px] text-[#333] font-bold  before:w-[70px] before:h-[1px] before:absolute before:bg-[#3498db] before:left-[0] before:bottom-[-10px] relative capitalize mb-[50px]">About Us </h1>
+                <h2 class="text-[#333333] text-[18px] leading-5 mb-4 font-[600] text-[20px]"><a href="#">General Health</a></h2>
+                <p class="text-[#999999] text-[16px] font-light	leading-6 pb-[30px]	mt-3">Not feeling well or just need an annual exam? We do it all! We also perform sports physicals and referrals for injuries. Whether you're sick or only need some routine maintenance, we're here for you!</p>
+            </div>
+        </div>
+    </section> 
+
     <!-- the practive -->
-    <section id="about" class="bg-[#fff] py-[60px] sm:py-[100px] border-[1px] border-[#eee]">
+    <section id="about" class="bg-[#fff] pt-[60px] pb-[20px] sm:pt-[80px] sm:pb-[20px] border-[1px] border-[#eee]">
         <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
             <div class="title-section ml-[auto] mr-[auto] ml-[15px] mr-[15px]">
                 <h1 class="text-[35px] sm:text-[40px] text-[#333] font-bold  before:w-[70px] before:h-[1px] before:absolute before:bg-[#3498db] before:left-[0] before:bottom-[-10px] relative capitalize mb-[50px]">The Practice</h1>
                 
-                <h2 class="text-[#333333] text-[18px] leading-5 "><a href="#">Our Health Mission</a></h2>
-                <p class="text-[#999999] text-[15px] font-light	leading-6 pb-[25px]	">Our experienced medical professionals put your healing needs first. We are proud to provide a high quality level of customer service, medical experience, and commitment to health and wellness to all our patients. Our goal is to make you feel better as quickly as possible.</p>
+                <h2 class="text-[#333333] text-[18px] leading-5 mb-4 font-[600] text-[20px]"><a href="#">Our Health Mission</a></h2>
+                <p class="text-[#999999] text-[16px] font-light	leading-6 pb-[30px]	">Our experienced medical professionals put your healing needs first. We are proud to provide a high quality level of customer service, medical experience, and commitment to health and wellness to all our patients. Our goal is to make you feel better as quickly as possible.</p>
 
-                <h2 class="text-[#333333] text-[18px] leading-5 "><a href="#">Experience and Professionalism</a></h2>
-                <p class="text-[#999999] text-[15px] font-light	leading-6 pb-[25px]	"> With years of experience, our medical team will assess you and create a custom recovery plan that's right for you. We understand the importance of educating you on the most effective ways to take care of your body, so that you can heal quickly. </p>
+                <h2 class="text-[#333333] text-[18px] leading-5 mb-4 font-[600] text-[20px]"><a href="#">Experience and Professionalism</a></h2>
+                <p class="text-[#999999] text-[16px] font-light	leading-6 pb-[30px]	"> With years of experience, our medical team will assess you and create a custom recovery plan that's right for you. We understand the importance of educating you on the most effective ways to take care of your body, so that you can heal quickly. </p>
 
-                <h2 class="text-[#333333] text-[18px] leading-5 "><a href="#">Physicians Who Care</a></h2>
-                <p class="text-[#999999] text-[15px] font-light	leading-6 pb-[25px]	">Not only will our doctors treat your existing conditions, we also work to prevent pain and illness from occurring. We strive to help you improve your quality of life, achieve your wellness goals, and heal your body to live your best life possible. </p>
-            </div>
-            
-            
-        </div>
-    </section> 
-
-    <!-- about company -->
-    <section id="about" class="bg-[#fff] py-[60px] sm:py-[100px]">
-        <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
-            <div class="title-section ml-[auto] mr-[auto] ml-[15px] mr-[15px]">
-                <h1 class="text-[35px] sm:text-[40px] text-[#333] font-bold  before:w-[70px] before:h-[1px] before:absolute before:bg-[#3498db] before:left-[0] before:bottom-[-10px] relative capitalize mb-[50px]">About Us </h1>
-                <h2 class="text-[#333333] text-[18px] leading-5 "><a href="#">General Health</a></h2>
-                <p class="text-[#999999] text-[15px] font-light	leading-6 pb-[25px]	mt-3">Not feeling well or just need an annual exam? We do it all! We also perform sports physicals and referrals for injuries. Whether you're sick or only need some routine maintenance, we're here for you!</p>
+                <h2 class="text-[#333333] text-[18px] leading-5 mb-4 font-[600] text-[20px]"><a href="#">Physicians Who Care</a></h2>
+                <p class="text-[#999999] text-[16px] font-light	leading-6 pb-[30px]	">Not only will our doctors treat your existing conditions, we also work to prevent pain and illness from occurring. We strive to help you improve your quality of life, achieve your wellness goals, and heal your body to live your best life possible. </p>
             </div>
         </div>
     </section> 
 
     <!-- statistics -->
-    <section id="'statistics" class="bg-[#3498db] py-[60px] sm:py-[100px] statistics">
+    <section id="'statistics" class="bg-[#3498db] py-[60px] sm:py-[80px] statistics">
         <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
                 <div id="counter" class="w-full flex flex-wrap justify-between gap-x-[1%] lg:w-[100%] gap-y-[40px] lg:gap-y-0">
                     <div class="text-[#fff] text-center w-[49%] lg:w-[24%]">
@@ -195,7 +193,7 @@
     </section>
 
     <!-- make appointment -->
-    <section id="appointment" class="bg-[#fff] py-[60px] sm:py-[100px] section-appointment">
+    <section id="appointment" class="bg-[#fff] pt-[60px] pb-[50px] sm:pt-[80px] sm:pb-[50px] section-appointment">
         <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
             <div class="w-full">
             <div class="w-[100%] lg:w-[50%]">
@@ -217,7 +215,7 @@
     </section>
 
     <!-- our departments -->
-    <section id="departments" class="bg-[#fafafa] pt-[100px] pb-[130px]">
+    <section id="departments" class="bg-[#fafafa] pt-[80px] pb-[80px]">
         <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
             <h1 class="text-[35px] sm:text-[40px] text-[#333] font-bold leading-[40px] sm:leading-[inherit] before:w-[70px] before:h-[1px] before:absolute before:bg-[#3498db] before:left-[0] before:bottom-[-10px] relative capitalize">Our Departments </h1>
             <p class="text-[#999999] text-[15px] font-light	leading-6 pt-[25px]">Sed arcu. Cras consequat.</p>
@@ -228,8 +226,8 @@
             <div class="max-w-[100%] sm:max-w-[450px] w-full bg-[#fff] mx-3 cursor-pointer">
                 <img src="./img/departments/cardiology.jpg" class="w-full max-h-[175px ]" />
                 <div class="w-full py-[25px] px-[20px]">
-                    <h5 class="text-[18px] font-[600] leading-[20px]">Cardiology</h5>
-                    <span class="fmr font-[300] text-[15px] text-[#999] mb-[12px] leading-[24px] inline-block">(including cardiovascular surgery)</span>
+                    <h5 class="text-[18px] font-[600] leading-[20px] text-ellipsis overflow-hidden whitespace-nowrap">Cardiology</h5>
+                    <span class="fmr font-[300] text-[14px] text-[#999] mb-[12px] leading-[24px] inline-block">(including cardiovascular surgery)</span>
                     <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. </p>
                     <button class="text-[15px] text-[#3498db] font-[300]">Get a cost estimate  <i class="fa fa-chevron-right text-[#3498db] text-[12px] ml-2"></i></button>
                 </div>
@@ -238,8 +236,8 @@
             <div class="max-w-[100%] sm:max-w-[450px] w-full bg-[#fff] mx-3 cursor-pointer">
                 <img src="./img/departments/obstetrics.jpg" class="w-full max-h-[175px ]" />
                 <div class="w-full py-[25px] px-[20px]">
-                    <h5 class="text-[18px] font-[600] leading-[20px]">Obstetrics and Gynecology</h5>
-                    <span class="fmr font-[300] text-[15px] text-[#999] mb-[12px] leading-[24px] inline-block">(including infertility treatment, IVF)</span>
+                    <h5 class="text-[18px] font-[600] leading-[20px] text-ellipsis overflow-hidden whitespace-nowrap">Obstetrics and Gynecology</h5>
+                    <span class="fmr font-[300] text-[14px] text-[#999] mb-[12px] leading-[24px] inline-block">(including infertility treatment, IVF)</span>
                     <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. </p>
                     <button class="text-[15px] text-[#3498db] font-[300]">Get a cost estimate  <i class="fa fa-chevron-right text-[#3498db] text-[12px] ml-2"></i></button>
                 </div>
@@ -248,8 +246,8 @@
             <div class="max-w-[100%] sm:max-w-[450px] w-full bg-[#fff] mx-3 cursor-pointer">
                 <img src="./img/departments/plastic surgery.jpg" class="w-full max-h-[175px ]" />
                 <div class="w-full py-[25px] px-[20px]">
-                    <h5 class="text-[18px] font-[600] leading-[20px]">Plastic and Reconstructive Surgery</h5>
-                    <span class="fmr font-[300] text-[15px] text-[#999] mb-[12px] leading-[24px] inline-block">(including treatment)</span>
+                    <h5 class="text-[18px] font-[600] leading-[20px] text-ellipsis overflow-hidden whitespace-nowrap">Plastic and Reconstructive Surgery</h5>
+                    <span class="fmr font-[300] text-[14px] text-[#999] mb-[12px] leading-[24px] inline-block">(including treatment)</span>
                     <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. </p>
                     <button class="text-[15px] text-[#3498db] font-[300]">Get a cost estimate  <i class="fa fa-chevron-right text-[#3498db] text-[12px] ml-2"></i></button>
                 </div>
@@ -258,8 +256,8 @@
                 <div class="max-w-[100%] sm:max-w-[450px] w-full bg-[#fff] mx-3 cursor-pointer">
                 <img src="./img/departments/stomatology.jpg" class="w-full max-h-[175px ]" />
                 <div class="w-full py-[25px] px-[20px]">
-                    <h5 class="text-[18px] font-[600] leading-[20px]">Stomatology</h5>
-                    <span class="fmr font-[300] text-[15px] text-[#999] mb-[12px] leading-[24px] inline-block">(including reatment and surgery)</span>
+                    <h5 class="text-[18px] font-[600] leading-[20px] text-ellipsis overflow-hidden whitespace-nowrap">Stomatology</h5>
+                    <span class="fmr font-[300] text-[14px] text-[#999] mb-[12px] leading-[24px] inline-block">(including reatment and surgery)</span>
                     <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. </p>
                     <button class="text-[15px] text-[#3498db] font-[300]">Get a cost estimate  <i class="fa fa-chevron-right text-[#3498db] text-[12px] ml-2"></i></button>
                 </div>
@@ -268,8 +266,8 @@
             <div class="max-w-[100%] sm:max-w-[450px] w-full bg-[#fff] mx-3 cursor-pointer">
                 <img src="./img/departments/traumatology.jpg" class="w-full max-h-[175px ]" />
                 <div class="w-full py-[25px] px-[20px]">
-                    <h5 class="text-[18px] font-[600] leading-[20px]">Traumatology and Orthopedics</h5>
-                    <span class="fmr font-[300] text-[15px] text-[#999] mb-[12px] leading-[24px] inline-block">(including surgery)</span>
+                    <h5 class="text-[18px] font-[600] leading-[20px] text-ellipsis overflow-hidden whitespace-nowrap">Traumatology and Orthopedics</h5>
+                    <span class="fmr font-[300] text-[14px] text-[#999] mb-[12px] leading-[24px] inline-block">(including surgery)</span>
                     <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. </p>
                     <button class="text-[15px] text-[#3498db] font-[300]">Get a cost estimate  <i class="fa fa-chevron-right text-[#3498db] text-[12px] ml-2"></i></button>
                 </div>
@@ -280,7 +278,7 @@
     </section>
 
     <!-- our doctors -->
-    <section id="doctors" class="bg-[#fff] pt-[100px] pb-[130px]">
+    <section id="doctors" class="bg-[#fff] pt-[80px] pb-[80px]">
         <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
             <h1 class="text-[35px] sm:text-[40px] text-[#333] font-bold leading-[40px] sm:leading-[inherit] before:w-[70px] before:h-[1px] before:absolute before:bg-[#3498db] before:left-[0] before:bottom-[-10px] relative capitalize">Our Doctors </h1>
             <!-- <p class="text-[#999999] text-[15px] font-light	leading-6 pt-[25px]">Sed arcu. Cras consequat.</p>                 -->
@@ -292,7 +290,7 @@
                         <div class="w-full text-center mt-[30px]">
                             <h5 class="text-[18px] font-[600] leading-[20px]">Muhammad Shahzad, MD, FACP</h5>
                             <span class="fmr font-[300] text-[15px] text-[#999] mb-[12px] leading-[24px] inline-block">Internal Medicine</span>
-                             <div class="team-descrip max-h-[175px] sm:max-h-[165px] overflow-hidden ease-in duration-500">
+                             <div class="team-descrip max-h-[175px] sm:max-h-[125px] overflow-hidden ease-in duration-500">
                                 <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Dr. Shahzad attended Rawalpinidi Medical University in Rawalpindi, Punjab, Pakistani. He completed his residency at Ravenswood Hospital in Northside Chicago.  Dr. Shahzad has been practicing medicine for <strong>more than 20 years</strong> and in addition to <strong>Internal Medicine</strong> he also specializes in <strong>Hospital Medicine</strong>. </p>
                                 <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Dr. Shahzad is affiliated with numerous Hospitals, Rehabs and Nursing Homes, Home Health Agencies. He is able to carry on the <strong>continuity of care when it's needed from the clinic, to the hospital, to rehab, and back to home</strong>. </p>
                                 <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Dr. Shahzad believes in always learning and always teaching. He not only takes great pride in the medical students he mentors but also believes in <strong>educating every patient</strong> to help them better understand their own health and <strong>to be actively involved in their medical care</strong>. </p>
@@ -306,7 +304,7 @@
                         <div class="w-full text-center mt-[30px]">
                             <h5 class="text-[18px] font-[600] leading-[20px]">Krishdeep Khosla, MD</h5>
                             <span class="fmr font-[300] text-[15px] text-[#999] mb-[12px] leading-[24px] inline-block">Internal Medicine</span>
-                            <div class="team-descrip max-h-[175px] sm:max-h-[165px] overflow-hidden ease-in duration-500">
+                            <div class="team-descrip max-h-[175px] sm:max-h-[125px] overflow-hidden ease-in duration-500">
                                 <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Dr. Khosla attended Government Medical College in India. He completed his resident at Chicago Medical School in North Chicago. Dr. Khosla's medical background includes over <strong>20 years of experience</strong> in chronic <strong>and acute care</strong>. </p>
                                 <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Dr. Khosla is affiliated with numerous Hospitals and Rehab and Nursing homes in Cook, Dupage, and Lake county.  </p>
                                 <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Dr. Khosla's philosophy of care is <strong>"providing care with dignity and respect"</strong>. </p>
@@ -320,10 +318,10 @@
                         <div class="w-full text-center mt-[30px]">
                             <h5 class="text-[18px] font-[600] leading-[20px]">Amina Baloch, APN</h5>
                             <span class="fmr font-[300] text-[15px] text-[#999] mb-[12px] leading-[24px] inline-block">Adult-Gero NP</span>
-                             <div class="team-descrip max-h-[175px] sm:max-h-[165px] overflow-hidden ease-in duration-500">
-                            <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Amina graduated Summa Cum Laude from Loyola Neihoff School of Nursing, where she also received the Julia Lane Silver Key Award. She then went on to obtain a Masters in Nursing from Maryland University in St. Louis, Missouri, specialized in Adult-Gero Primary Care. </p>
+                             <div class="team-descrip max-h-[175px] sm:max-h-[125px] overflow-hidden ease-in duration-500">
+                                <p class="frr font-[300] text-[15px] text-[#666] mb-[15px] leading-[24px]">Amina graduated Summa Cum Laude from Loyola Neihoff School of Nursing, where she also received the Julia Lane Silver Key Award. She then went on to obtain a Masters in Nursing from Maryland University in St. Louis, Missouri, specialized in Adult-Gero Primary Care. </p>
                             </div>
-                            <!-- <button onclick="showDescription('mem3-card')" class="text-[15px] text-[#3498db] font-[300]"><span class="btn-text">Show more</span><i class="fa fa-chevron-down text-[#3498db ] text-[12px] ml-2 ease-in duration-500"></i></button> -->
+                            <button onclick="showDescription('mem3-card')" class="btn text-[15px] text-[#3498db] font-[300] mt-4"><span class="btn-text">Show more</span><i class="fa fa-chevron-down text-[#3498db ] text-[12px] ml-2 ease-in duration-500"></i></button>
                         </div>
                     </div>
                 <!-- </div> -->
@@ -345,350 +343,350 @@
         </div>
     </section>
 
-   <div id="services">
-     <!-- our services -->
-     <section id="services" class="bg-[#fff] py-[60px] sm:py-[100px] section-our-services">
-        <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
-            <div class="w-full flex justify-end">
-                <div class="w-[100%] lg:w-[50%] pl-0 lg:pl-[7%]">
-            
-                    <h1 class="text-[35px] sm:text-[40px] text-[#333] font-bold leading-[40px] sm:leading-[inherit] before:w-[70px] before:h-[1px] before:absolute before:bg-[#3498db] before:left-[0] before:bottom-[-10px] relative capitalize">Services </h1>
-                    <p class="text-[#999999] text-[15px] font-light	leading-6 pt-[25px]">Morbi in sem quis dui placerat ornare.</p>
-                    <div class="w-full flex flex-wrap gap-x-[4%] mt-[70px]">
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">01.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">24 Hour Service</span>
+    <div id="services">
+        <!-- our services -->
+        <section id="services" class="bg-[#fff] py-[60px] sm:py-[80px] section-our-services">
+            <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
+                <div class="w-full flex justify-end">
+                    <div class="w-[100%] lg:w-[50%] pl-0 lg:pl-[7%]">
+                
+                        <h1 class="text-[35px] sm:text-[40px] text-[#333] font-bold leading-[40px] sm:leading-[inherit] before:w-[70px] before:h-[1px] before:absolute before:bg-[#3498db] before:left-[0] before:bottom-[-10px] relative capitalize">Services </h1>
+                        <p class="text-[#999999] text-[15px] font-light	leading-6 pt-[25px]">Morbi in sem quis dui placerat ornare.</p>
+                        <div class="w-full flex flex-wrap gap-x-[4%] mt-[70px]">
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">01.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">24 Hour Service</span>
+                                </div>
+                                <p class="frr text-[15px] text-[#666] font-[300] leading-[24px] mb-[10px]">
+                                    We know that your medical needs don't stop when office hours are over. Using our help line and our email service, you can get a message to your health team when it is convenient for you.
+                                </p>
                             </div>
-                            <p class="frr text-[15px] text-[#666] font-[300] leading-[24px] mb-[10px]">
-                                We know that your medical needs don't stop when office hours are over. Using our help line and our email service, you can get a message to your health team when it is convenient for you.
-                            </p>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">02.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Wellness  Support</span>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">02.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Wellness  Support</span>
+                                </div>
+                                <p class="frr text-[15px] text-[#666] font-[300] leading-[24px] mb-[10px]">
+                                    Our team will support you in building a healthier you. No matter what your health needs are, having a team support you will keep you on the path to meeting them. We work together to connect you with the services you need.
+                                </p>
                             </div>
-                            <p class="frr text-[15px] text-[#666] font-[300] leading-[24px] mb-[10px]">
-                                Our team will support you in building a healthier you. No matter what your health needs are, having a team support you will keep you on the path to meeting them. We work together to connect you with the services you need.
-                            </p>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">03.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">A Healthy Community</span>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">03.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">A Healthy Community</span>
+                                </div>
+                                <p class="frr text-[15px] text-[#666] font-[300] leading-[24px] mb-[10px]">
+                                    When you choose us, you join a community. We work not just with you but with other members of our community to build a network of people working together for a healthier world. 
+                                </p>
                             </div>
-                            <p class="frr text-[15px] text-[#666] font-[300] leading-[24px] mb-[10px]">
-                                When you choose us, you join a community. We work not just with you but with other members of our community to build a network of people working together for a healthier world. 
-                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            </div>
-    </section>  
+                </div>
+        </section>  
 
-    <!-- affiliated hospitals -->
-    <section id="services" class="bg-[#fff] py-[60px] sm:py-[100px] border-[1px] border-[#eee] lg:border-0 affiliated-hospitals">
-        <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
-            <div class="w-full flex items-end">
-                <div class="w-[100%] lg:w-[50%] pr-0 lg:pr-[7%]">
-                    <h1 class="text-[35px] sm:text-[40px] text-[#333] font-bold leading-[40px] sm:leading-[inherit] before:w-[70px] before:h-[1px] before:absolute before:bg-[#3498db] before:left-[0] before:bottom-[-10px] relative capitalize">affiliated hospitals </h1>
-                    <!-- <p class="text-[#999999] text-[15px] font-light	leading-6 pt-[25px]">Additional Information</p> -->
-                    <div class="w-full flex flex-wrap gap-x-[4%] mt-[70px]">
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">01.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Adventist Glen Oaks  Hospital</span>
+        <!-- affiliated hospitals -->
+        <section id="services" class="bg-[#fff] py-[60px] sm:py-[80px] border-[1px] border-[#eee] lg:border-0 affiliated-hospitals">
+            <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
+                <div class="w-full flex items-end">
+                    <div class="w-[100%] lg:w-[50%] pr-0 lg:pr-[7%]">
+                        <h1 class="text-[35px] sm:text-[40px] text-[#333] font-bold leading-[40px] sm:leading-[inherit] before:w-[70px] before:h-[1px] before:absolute before:bg-[#3498db] before:left-[0] before:bottom-[-10px] relative capitalize">affiliated hospitals </h1>
+                        <!-- <p class="text-[#999999] text-[15px] font-light	leading-6 pt-[25px]">Additional Information</p> -->
+                        <div class="w-full flex flex-wrap gap-x-[4%] mt-[70px]">
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">01.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Adventist Glen Oaks  Hospital</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">02.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Good Samaritan  Hospital</span>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">02.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Good Samaritan  Hospital</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">03.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Amita Alexian Brothers  Hospital</span>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">03.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Amita Alexian Brothers  Hospital</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">04.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Elmhurst Memorial  Hospital</span>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">04.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Elmhurst Memorial  Hospital</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">05.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Kindred  Hospital</span>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">05.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Kindred  Hospital</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">06.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Holy Cross  Surgery</span>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">06.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Holy Cross  Surgery</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">07.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Mount Sinai  Surgery</span>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">07.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Mount Sinai  Surgery</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">08.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Chicago Behavioral Surgery</span>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">08.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Chicago Behavioral Surgery</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            </div>
-    </section>  
+                </div>
+        </section>  
 
-    <!-- accepted insurance -->
-    <section id="services" class="bg-[#fff] py-[60px] sm:py-[100px] border-[1px] border-[#eee] lg:border-0 accepted-insurance">
-        <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
-            <div class="w-full flex justify-end">
-                <div class="w-[100%] lg:w-[50%] pl-0 lg:pl-[7%]">
-            
-                    <h1 class="text-[35px] sm:text-[40px] text-[#333] font-bold leading-[40px] sm:leading-[inherit] before:w-[70px] before:h-[1px] before:absolute before:bg-[#3498db] before:left-[0] before:bottom-[-10px] relative capitalize">Accepted Insurances</h1>
-                    <!-- <p class="text-[#999999] text-[15px] font-light	leading-6 pt-[25px]">Morbi in sem quis dui placerat ornare.</p> -->
-                    <div class="w-full flex flex-wrap gap-x-[4%] mt-[70px]">
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">01.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Blue Cross Blue  Shield</span>
+        <!-- accepted insurance -->
+        <section id="services" class="bg-[#fff] py-[60px] sm:py-[80px] border-[1px] border-[#eee] lg:border-0 accepted-insurance">
+            <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
+                <div class="w-full flex justify-end">
+                    <div class="w-[100%] lg:w-[50%] pl-0 lg:pl-[7%]">
+                
+                        <h1 class="text-[35px] sm:text-[40px] text-[#333] font-bold leading-[40px] sm:leading-[inherit] before:w-[70px] before:h-[1px] before:absolute before:bg-[#3498db] before:left-[0] before:bottom-[-10px] relative capitalize">Accepted Insurances</h1>
+                        <!-- <p class="text-[#999999] text-[15px] font-light	leading-6 pt-[25px]">Morbi in sem quis dui placerat ornare.</p> -->
+                        <div class="w-full flex flex-wrap gap-x-[4%] mt-[70px]">
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">01.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Blue Cross Blue  Shield</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">02.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Humana    </span>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">02.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Humana    </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">03.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">United Health   Care</span>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">03.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">United Health   Care</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">04.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Medicare   </span>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">04.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Medicare   </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">05.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Medicaid    </span>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">05.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Medicaid    </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">06.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Illinicare   </span>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">06.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Illinicare   </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">07.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Molina    Healthcare</span>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">07.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Molina    Healthcare</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">08.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Ambeter   </span>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">08.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Ambeter   </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">09.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">MMAI    </span>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">09.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">MMAI    </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">10.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Cigna   </span>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">10.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Cigna   </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">11.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Aetna   </span>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">11.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Aetna   </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">12.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Anthem   </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-    </section>  
-    
-    <!-- clinical-interests -->
-    <section id="services" class="bg-[#fff] py-[60px] sm:py-[100px] border-[1px] border-[#eee] lg:border-0 clinical-interests">
-        <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
-            <div class="w-full flex items-end">
-                <div class="w-[100%] lg:w-[50%] pr-0 lg:pr-[7%]">
-                    <h1 class="text-[35px] sm:text-[40px] text-[#333] font-bold leading-[40px] sm:leading-[inherit] before:w-[70px] before:h-[1px] before:absolute before:bg-[#3498db] before:left-[0] before:bottom-[-10px] relative capitalize">clinical interests</h1>
-                    <!-- <p class="text-[#999999] text-[15px] font-light	leading-6 pt-[25px]">Additional Information</p> -->
-                    <div class="w-full flex flex-wrap gap-x-[4%] mt-[70px]">
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">01.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">asthma    </span>
-                            </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">02.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]"><span class="uppercase">copd</span>    </span>
-                            </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">03.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">diabetes    </span>
-                            </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">04.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">arthritis    </span>
-                            </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">05.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">GastroIntestinal        Issues</span>
-                            </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">06.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Atherosclerotic Heart     Disease</span>
-                            </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">07.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Coronary Artery     Disease</span>
-                            </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">08.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">High Blood    Pressure</span>
-                            </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">09.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">High Cholesterol            </span>
-                            </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">10.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Back Pain   Surgery</span>
-                            </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">11.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Primary Care  </span>
-                            </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">12.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Geriatrics   </span>
-                            </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">13.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Disease Prevention  </span>
-                            </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">14.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">School Physicals   </span>
-                            </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">15.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Sport Physicals  </span>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">12.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Anthem   </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            </div>
-    </section>  
+                </div>
+        </section>  
+        
+        <!-- clinical-interests -->
+        <section id="services" class="bg-[#fff] py-[60px] sm:py-[80px] border-[1px] border-[#eee] lg:border-0 clinical-interests">
+            <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
+                <div class="w-full flex items-end">
+                    <div class="w-[100%] lg:w-[50%] pr-0 lg:pr-[7%]">
+                        <h1 class="text-[35px] sm:text-[40px] text-[#333] font-bold leading-[40px] sm:leading-[inherit] before:w-[70px] before:h-[1px] before:absolute before:bg-[#3498db] before:left-[0] before:bottom-[-10px] relative capitalize">clinical interests</h1>
+                        <!-- <p class="text-[#999999] text-[15px] font-light	leading-6 pt-[25px]">Additional Information</p> -->
+                        <div class="w-full flex flex-wrap gap-x-[4%] mt-[70px]">
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">01.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">asthma    </span>
+                                </div>
+                            </div>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">02.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]"><span class="uppercase">copd</span>    </span>
+                                </div>
+                            </div>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">03.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">diabetes    </span>
+                                </div>
+                            </div>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">04.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">arthritis    </span>
+                                </div>
+                            </div>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">05.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">GastroIntestinal        Issues</span>
+                                </div>
+                            </div>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">06.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Atherosclerotic Heart     Disease</span>
+                                </div>
+                            </div>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">07.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Coronary Artery     Disease</span>
+                                </div>
+                            </div>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">08.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">High Blood    Pressure</span>
+                                </div>
+                            </div>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">09.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">High Cholesterol            </span>
+                                </div>
+                            </div>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">10.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Back Pain   Surgery</span>
+                                </div>
+                            </div>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">11.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Primary Care  </span>
+                                </div>
+                            </div>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">12.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Geriatrics   </span>
+                                </div>
+                            </div>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">13.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Disease Prevention  </span>
+                                </div>
+                            </div>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">14.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">School Physicals   </span>
+                                </div>
+                            </div>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">15.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Sport Physicals  </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </section>  
 
-    <!-- lang spoken -->
-    <section id="services" class="bg-[#fff] py-[60px] sm:py-[100px] border-[1px] border-[#eee] lg:border-0 lang-spoken">
-        <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
-            <div class="w-full flex justify-end">
-                <div class="w-[100%] lg:w-[50%] pl-0 lg:pl-[7%]">
-            
-                    <h1 class="text-[35px] sm:text-[40px] text-[#333] font-bold leading-[40px] sm:leading-[inherit] before:w-[70px] before:h-[1px] before:absolute before:bg-[#3498db] before:left-[0] before:bottom-[-10px] relative capitalize">Languages Spoken</h1>
-                    <!-- <p class="text-[#999999] text-[15px] font-light	leading-6 pt-[25px]">Morbi in sem quis dui placerat ornare.</p> -->
-                    <div class="w-full flex flex-wrap gap-x-[4%] mt-[70px]">
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">01.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">English  </span>
+        <!-- lang spoken -->
+        <section id="services" class="bg-[#fff] py-[60px] sm:py-[80px] border-[1px] border-[#eee] lg:border-0 lang-spoken">
+            <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
+                <div class="w-full flex justify-end">
+                    <div class="w-[100%] lg:w-[50%] pl-0 lg:pl-[7%]">
+                
+                        <h1 class="text-[35px] sm:text-[40px] text-[#333] font-bold leading-[40px] sm:leading-[inherit] before:w-[70px] before:h-[1px] before:absolute before:bg-[#3498db] before:left-[0] before:bottom-[-10px] relative capitalize">Languages Spoken</h1>
+                        <!-- <p class="text-[#999999] text-[15px] font-light	leading-6 pt-[25px]">Morbi in sem quis dui placerat ornare.</p> -->
+                        <div class="w-full flex flex-wrap gap-x-[4%] mt-[70px]">
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">01.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">English  </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">02.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Urdu    </span>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">02.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Urdu    </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">03.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Punjabi   </span>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">03.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Punjabi   </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">04.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Hindi   </span>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">04.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Hindi   </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
-                            <div class="flex">
-                                <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">05.</span>
-                                <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Spanish interpreter  </span>
+                            <div class="sm-box w-[48%] fmr mb-[20px] text-[#999] text-[15px]" >
+                                <div class="flex">
+                                    <span class="frr text-[30px] sm:text-[42px] text-[#3498db] font-[300] mr-[10px] mt-[-11px]">05.</span>
+                                    <span class="text-[#333] text-[16px] sm:text-[18px] font-[600] mb-[20px] leading-[20px] capitalize max-w-[100% ] l g:max-w-[100%]">Spanish interpreter  </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            </div>
-    </section>  
-   </div>
+                </div>
+        </section>  
+    </div>
             
     <!-- testimonial -->
-    <section id="" class="bg-[#3498db] py-[60px] sm:py-[100px] hidden">
+    <section id="" class="bg-[#3498db] py-[60px] sm:py-[80px] hidden">
         <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
         <div class="text-center">
             <h1 class="text-[40px] text-[#fff] font-bold capitalize">
@@ -778,7 +776,7 @@
     </section>
 
     <!-- news -->
-    <section id="news" class="bg-[#fafafa] py-[60px] sm:py-[100px] border-[1px] border-[#eee]">
+    <section id="news" class="bg-[#fafafa] py-[60px] sm:py-[80px] border-[1px] border-[#eee]">
         <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
             <h1 class="text-[35px] sm:text-[40px] text-[#333] font-bold leading-[40px] sm:leading-[inherit] before:w-[70px] before:h-[1px] before:absolute before:bg-[#3498db] before:left-[0] before:bottom-[-10px] relative capitalize">Latest Tips and News </h1>
             <p class="text-[#999999] text-[15px] font-light	leading-6 pt-[25px]">Sed arcu. Cras consequat.</p>                
@@ -914,7 +912,7 @@
     </section>
 
     <!-- get-in-touch Dr. Shahzad -->
-    <section id="contact" class="bg-[#fff] py-[60px] sm:py-[100px]">
+    <section id="contact" class="bg-[#fff] py-[60px] sm:py-[80px]">
         <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
             <div class="w-full flex">
                 <div class="w-[100%]">
@@ -993,7 +991,7 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d95098.75430596915!2d-88.043997!3d41.8533551!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e4dad47682421%3A0xad4152a6b8bc6526!2s1S376%20Summit%20Ave%20c%204b%2C%20Oakbrook%20Terrace%2C%20IL%2060181%2C%20USA!5e0!3m2!1sen!2s!4v1659782287031!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     <!-- get-in-touch Dr. Khosla -->
-    <section id="contact" class="bg-[#fff] py-[60px] sm:py-[100px]">
+    <section id="contact" class="bg-[#fff] py-[60px] sm:py-[80px]">
         <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
             <div class="w-full flex">
                 <div class="w-[100%]">
@@ -1048,7 +1046,54 @@
 
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d95098.75430596915!2d-88.043997!3d41.8533551!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e4dad47682421%3A0xad4152a6b8bc6526!2s1S376%20Summit%20Ave%20c%204b%2C%20Oakbrook%20Terrace%2C%20IL%2060181%2C%20USA!5e0!3m2!1sen!2s!4v1659782287031!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-    <footer class="text-center bg-[#333] pt-[60px] sm:pt-[100px] text-[#fff] px-[5%] sm:px-0">
+      <!-- forms -->
+      <section id="forms" class="bg-[#fafafa] py-[60px] sm:py-[80px] border-[1px] border-[#eee]">
+        <div class="container mx-auto max-w-[1170px] px-[5%] xl:px-0">
+            <h1 class="text-[35px] sm:text-[40px] text-[#333] font-bold leading-[40px] sm:leading-[inherit] before:w-[70px] before:h-[1px] before:absolute before:bg-[#3498db] before:left-[0] before:bottom-[-10px] relative capitalize">Downloads</h1>
+            <p class="text-[#999999] text-[15px] font-light	leading-6 pt-[25px]">Print and fill out forms in the comfort of your home before your first appointment. </p>                
+
+            <div class="pt-[20px] sm:pt-[50px] mx-auto max-w-[850px]">
+                  <div class="p-6 w-full flex justify-between bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 mb-3">
+                     <a>
+                        <h5 class="text-[18px] sm:text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Patient Medical History (pdf)</h5>
+                    </a>
+                    <a target="_blank" href="//img1.wsimg.com/blobby/go/de5a1caa-baec-4921-ab76-b2172627ebf0/downloads/Patient%20Medical%20History.pdf?ver=1655497376849" class="inline-flex items-center text-blue-600 hover:underline ml-2">
+                        <i class="fa fa-download mr-1"></i>
+                        <span class="hidden sm:block">Download</span>
+                    </a>
+                </div>
+                <div class="p-6 w-full flex justify-between bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 mb-3">
+                     <a>
+                        <h5 class="text-[18px] sm:text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Patient Registration Form (pdf)</h5>
+                    </a>
+                    <a target="_blank" href="//img1.wsimg.com/blobby/go/de5a1caa-baec-4921-ab76-b2172627ebf0/downloads/Patient%20Registration%20Form.pdf?ver=1655497376849" class="inline-flex items-center text-blue-600 hover:underline ml-2">
+                        <i class="fa fa-download mr-1"></i>
+                        <span class="hidden sm:block">Download</span>
+                    </a>
+                </div>
+                <div class="p-6 w-full flex justify-between bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 mb-3">
+                     <a>
+                        <h5 class="text-[18px] sm:text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Medical Release Consent Form (pdf)</h5>
+                    </a>
+                    <a target="_blank" href="//img1.wsimg.com/blobby/go/de5a1caa-baec-4921-ab76-b2172627ebf0/downloads/Medical%20Release%20Consent%20Form.pdf?ver=1655497376849" class="inline-flex items-center text-blue-600 hover:underline ml-2">
+                        <i class="fa fa-download mr-1"></i>
+                        <span class="hidden sm:block">Download</span>
+                    </a>
+                </div>
+                <div class="p-6 w-full flex justify-between bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 mb-3">
+                     <a>
+                        <h5 class="text-[18px] sm:text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Patient Consent Form (pdf)</h5>
+                    </a>
+                    <a target="_blank" href="//img1.wsimg.com/blobby/go/de5a1caa-baec-4921-ab76-b2172627ebf0/downloads/Patient%20Consent%20Form.pdf?ver=1655497376849" class="inline-flex items-center text-blue-600 hover:underline ml-2">
+                        <i class="fa fa-download mr-1"></i>
+                        <span class="hidden sm:block">Download</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center bg-[#333] pt-[60px] sm:pt-[80px] text-[#fff] px-[5%] sm:px-0">
         <div class="max-w-[600px] mx-auto text-center">
             <h4 class="text-[24px] mb-[14px] font-[600]">Stay informed and healthy</h4>
                 <p class="text-[#ccc] font-[300] leading-[24px] text-[15px]">
@@ -1070,8 +1115,6 @@
             Copyright © 2022 S & K Medical Center - All Rights Reserved.
         </p>
     </footer>
- 
-
     
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/slick.min.js"></script>
@@ -1276,12 +1319,11 @@
                     } else {
                         document.getElementById('menu_contact').classList.remove("active");
                     }
-
             })
     </script>
     <script>
             function  activeMenu (elemId) {
-                var elems = document.querySelectorAll(".menu-item");
+                var elems = document.querySelectorAll(".menu-item font-[600]");
                 [].forEach.call(elems, function(el) {
                     el.classList.remove("active");
                 });
